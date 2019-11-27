@@ -66,7 +66,7 @@ menu:
       type: 1  # 跳转类型 1：站内异步跳转
     方世谦:
       on: false
-      url: http://yelog.org/
+      url: https://fangshiqian.github.io/my-blog/
       type: 2  # 跳转类型 2：当前页面跳转
     github:
       on: false

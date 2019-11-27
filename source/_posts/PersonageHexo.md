@@ -148,6 +148,14 @@ Markdown内容...
 
 ![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/123)
 
+```javascript
+ACCESS_TOKEN
+
+// Name 为该字段 复制即可
+```
+
+
+
 
 
 ![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/123%E7%88%B1%E6%88%91%E7%9A%84)
@@ -155,6 +163,32 @@ Markdown内容...
 
 
 ![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/2374)
+
+```js
+name: GitHub Actions Build and Deploy Demo 
+on:
+  push:
+    branches:
+      - master 
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+        
+      - name: Build and Deploy
+        uses: JamesIves/github-pages-deploy-action@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: public
+          BUILD_SCRIPT: npm install && npm run build
+          
+          // 复制该字段到Edit 里面
+```
+
+
 
 
 

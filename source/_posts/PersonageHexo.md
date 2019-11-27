@@ -12,7 +12,7 @@ tags: 工具
 
 ## 安装 Hexo
 
-```bash
+```javascript
 1. npm install -g hexo-cli
 2. hexo --version    (确认是否安装成功)
 ```
@@ -23,13 +23,13 @@ tags: 工具
 
 ## 生成自己的网站
 
-> ```bash
+> ```javascript
 > hexo init 网站项目目录名称
 > ```
 >
 > 
 >
-> ```bash
+> ```javascript
 > hexo init my-blog			(举例)
 > ```
 >
@@ -41,13 +41,13 @@ tags: 工具
 
 > 在你的网站目录下执行该命令，它会启动一个本地 http 服务，用于预览 
 >
-> ```bash
+> ```javascript
 > npm run build
 > ```
 >
 > ​	 部署
 >
-> ```bash
+> ```javascript
 > hexo server
 > ```
 >
@@ -70,7 +70,7 @@ tags: 工具
 
 在项目的`source/_posts`中创建 Markdown 文件并写入：
 
-```bash
+```javascript
 --title: 文章标题
 --
 Markdown内容...
@@ -102,7 +102,7 @@ Markdown内容...
 
 ### 准备
 
-> ```bash
+> ```javascript
 > 1. hexo init my-blogs	创建文件夹
 > ```
 

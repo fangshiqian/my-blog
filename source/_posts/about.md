@@ -1,8 +1,8 @@
 ---
-title: 3-hexo使用说明
+title: 简历
 date: 2017-03-23 15:13:47
 categories:
-- 工具
+- 简历
 tags:
 - hexo
 - 3-hexo

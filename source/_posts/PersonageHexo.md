@@ -190,4 +190,12 @@ Markdown内容...
 
 ![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E9%A9%B1%E8%9A%8A%E5%99%A8)
 
-## 9. 直接推送到远程仓库,具体怎么修改参考主题内容
+## 9. 直接推送到远程仓库,具体怎么修改内容参考主题文档(这个时候可以直接打开你的页面了)
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/1231242)
+
+
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/12312434121)
+
+## 10. 以后每次修改直好接提交到远程仓库,GitHub会自动发布

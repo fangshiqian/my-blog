@@ -11,8 +11,8 @@
 
 通过博客，我们可以记录自己的生活和成长的轨迹。它不像 Twitter 那样碎片化，也不像 Facebook 那样关系化，它是私人的空间。
 
-## 关于方世谦
-**方世谦** 是方世谦的个人站。
+## 关于本站
+本网站是方世谦的个人站。
 
 到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。
 

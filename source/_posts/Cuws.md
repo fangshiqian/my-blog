@@ -1,6 +1,6 @@
 ---
 title: 常用网址
-date: 2019-11-27 17:05:38
+date: 2019-10-27 17:05:38
 categories: 网址
 tags: 网址
 ---
@@ -20,5 +20,5 @@ tags: 网址
 ###  13.[ vue-element-admin(后台框架) ]( https://panjiachen.github.io/vue-element-admin-site/zh/ ) 
 ###  14.[ 经典模块化前端框架 ]( https://www.layui.com/ ) 
 ###  15.[ 纯JavaScript图表库 ]( https://echarts.apache.org/zh/index.html ) 
-###  16.[ 提问的智慧 ]( https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md ) 
+###  16.[ 提问的智慧(一篇文章) ]( https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md ) 
 

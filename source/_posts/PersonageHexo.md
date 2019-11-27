@@ -1,0 +1,193 @@
+---
+title: 搭建使用 Hexo 结合 GitHub Pages 搭建静态网 站
+date: 2019-11-27 20:42:57
+top:
+categories: 工具
+tags: 工具
+---
+> ​	Hexo官网: https://hexo.io/zh-cn/docs/index.html 
+>
+> ​	安装依赖:node.js	git
+> ​	新建一个文件
+
+## 安装 Hexo
+
+```bash
+1. npm install -g hexo-cli
+2. hexo --version    (确认是否安装成功)
+```
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E7%A1%AE%E8%AE%A4%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F)
+
+​			成功样式
+
+## 生成自己的网站
+
+> ```bash
+> hexo init 网站项目目录名称
+> ```
+>
+> 
+>
+> ```bash
+> hexo init my-blog			(举例)
+> ```
+>
+> 
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E7%9B%AE%E5%BD%95)
+
+## 本地预览
+
+> 在你的网站目录下执行该命令，它会启动一个本地 http 服务，用于预览 
+>
+> ```bash
+> npm run build
+> ```
+>
+> ​	 部署
+>
+> ```bash
+> hexo server
+> ```
+>
+> ​	 本地预览
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E6%9C%AC%E5%9C%B0%E9%A2%84%E8%A7%88)
+
+注意: 查看完本地的这个之后直接关闭就可以了
+
+## 目录结构
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E7%9B%AE%E5%BD%95)
+
+* node_modules 第三方包
+* scaﬀolds 文章模板
+* source 源代码，markdown
+* themes 主题目录
+
+## 写文章
+
+在项目的`source/_posts`中创建 Markdown 文件并写入：
+
+```bash
+--title: 文章标题
+--
+Markdown内容...
+```
+
+只需要创建文件写就可以了，不需要做任何操作。
+
+更多内容请参考： https://hexo.io/zh-cn/docs/writing 。
+
+## 如何部署(一步都不能错)
+
+步骤3执行完 =>  执行命令:hexo generate
+
+ 生成静态文件。
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E6%96%87%E4%BB%B6)
+
+这个就是要部署的一个文件
+
+然后GIT推送到GitHub仓库
+
+启动GitHub page 方式
+
+这种方式麻烦(不适用)!!!!!!!!!!!!!!!!!!
+
+以上方法适合本地测试使用!!!!!!!!!!!!!
+
+## 自动发布(远程仓库-正式安装)
+
+### 准备
+
+> ```bash
+> 1. hexo init my-blogs	创建文件夹
+> ```
+
+> ​	2. 在GitHub上创建远程仓库,下图所示:
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E4%BB%93%E8%BF%9C%E7%A8%8B%E5%BA%93)
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E6%9C%AC%E5%9C%B0%E4%BF%AE%E6%94%B9)
+
+​	提交到远程仓库
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E6%8F%90%E4%BA%A4%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93)
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E4%BB%93%E5%BA%93)
+
+### 在远程仓库部署
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E9%83%A8%E7%BD%B2)
+
+
+
+
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/2)
+
+
+
+
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E9%98%BF%E8%90%A8%E5%BE%B7)
+
+​																						滑到最下边
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E5%AE%89%E6%85%B0)
+
+
+
+
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E9%98%BF%E6%96%AF%E9%A1%BF)
+
+
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/123)
+
+
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/123%E7%88%B1%E6%88%91%E7%9A%84)
+
+
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/2374)
+
+
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E5%87%A0%E5%8D%81%E5%9D%97)
+
+
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E4%BD%BF%E7%94%A8)
+
+
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/1231%E4%BD%8D)
+
+​																					打开上面网址,查看是否能打开
+
+
+
+## [更换主题(点击此处获取连接)]( https://hexo.io/themes/ )
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/12312)
+
+
+
+![image-20191128005327908](D:%5Creview%5CPersonageHexo%5Cmy-blog%5Cthemes%5C3-hexo%5Csource%5Cimg%5Cimage-20191128005327908.png)
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/23454352)
+
+​																	文件名改成git clone 后缀的名字
+
+​																			解压成这样到这个文件
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/123%E8%AF%B7%E9%97%AE)
+
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E9%A9%B1%E8%9A%8A%E5%99%A8)
+
+## 直接推送到远程仓库,具体怎么修改参考主题内容

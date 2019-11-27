@@ -10,7 +10,7 @@ tags: 工具
 > ​	安装依赖:node.js	git
 > ​	新建一个文件
 
-## 安装 Hexo
+## 1. 安装 Hexo
 
 ```javascript
 1. npm install -g hexo-cli
@@ -21,7 +21,7 @@ tags: 工具
 
 ​			成功样式
 
-## 生成自己的网站
+## 2. 生成自己的网站
 
 > ```javascript
 > hexo init 网站项目目录名称
@@ -37,7 +37,7 @@ tags: 工具
 
 ![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E7%9B%AE%E5%BD%95)
 
-## 本地预览
+## 3. 本地预览
 
 > 在你的网站目录下执行该命令，它会启动一个本地 http 服务，用于预览 
 >
@@ -57,7 +57,7 @@ tags: 工具
 
 注意: 查看完本地的这个之后直接关闭就可以了
 
-## 目录结构
+## 4. 目录结构
 
 ![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E7%9B%AE%E5%BD%95)
 
@@ -66,7 +66,7 @@ tags: 工具
 * source 源代码，markdown
 * themes 主题目录
 
-## 写文章
+## 5. 写文章
 
 在项目的`source/_posts`中创建 Markdown 文件并写入：
 
@@ -80,7 +80,7 @@ Markdown内容...
 
 更多内容请参考： https://hexo.io/zh-cn/docs/writing 。
 
-## 如何部署(一步都不能错)
+## 6. 如何部署(一步都不能错)
 
 步骤3执行完 =>  执行命令:hexo generate
 
@@ -98,9 +98,9 @@ Markdown内容...
 
 以上方法适合本地测试使用!!!!!!!!!!!!!
 
-## 自动发布(远程仓库-正式安装)
+## 7. 自动发布(远程仓库-正式安装)
 
-### 准备
+### 7.1 准备
 
 > ```javascript
 > 1. hexo init my-blogs	创建文件夹
@@ -118,7 +118,7 @@ Markdown内容...
 
 ![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E4%BB%93%E5%BA%93)
 
-### 在远程仓库部署
+### 7.2 在远程仓库部署
 
 ![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E9%83%A8%E7%BD%B2)
 
@@ -172,7 +172,7 @@ Markdown内容...
 
 
 
-## [更换主题(点击此处获取连接)]( https://hexo.io/themes/ )
+## 8. [更换主题(点击此处获取连接)]( https://hexo.io/themes/ )
 
 ![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/12312)
 
@@ -190,4 +190,4 @@ Markdown内容...
 
 ![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E9%A9%B1%E8%9A%8A%E5%99%A8)
 
-## 直接推送到远程仓库,具体怎么修改参考主题内容
+## 9. 直接推送到远程仓库,具体怎么修改参考主题内容

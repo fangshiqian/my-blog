@@ -178,13 +178,13 @@ Markdown内容...
 
 
 
-![image-20191128005327908](D:%5Creview%5CPersonageHexo%5Cmy-blog%5Cthemes%5C3-hexo%5Csource%5Cimg%5Cimage-20191128005327908.png)
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/12334%E6%89%8B%E6%89%93)
 
 ![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/23454352)
 
-​																	文件名改成git clone 后缀的名字
+​																						文件名改成git clone 后缀的名字
 
-​																			解压成这样到这个文件
+​																			解压成这样到这个文件放到my-blogs/themes 文件夹下
 
 ![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/123%E8%AF%B7%E9%97%AE)
 

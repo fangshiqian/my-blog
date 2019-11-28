@@ -13,8 +13,8 @@ tags: 工具
 ## 1. 安装 Hexo
 
 ```javascript
-1. npm install -g hexo-cli
-2. hexo --version    (确认是否安装成功)
+ npm install -g hexo-cli
+ hexo --version    (确认是否安装成功)
 ```
 
 ![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E7%A1%AE%E8%AE%A4%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F)
@@ -96,10 +96,10 @@ Markdown内容...
 ### 7.1 准备
 
 > ```javascript
-> 1. hexo init my-blogs	创建文件夹
+>  hexo init my-blogs	创建文件夹
 > ```
 
-> ​	2. 在GitHub上创建远程仓库,下图所示:
+> ​ 在GitHub上创建远程仓库,下图所示:
 
 ![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E4%BB%93%E8%BF%9C%E7%A8%8B%E5%BA%93)
 

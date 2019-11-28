@@ -25,15 +25,8 @@ tags: 工具
 
 > ```javascript
 > hexo init 网站项目目录名称
-> ```
->
-> 
->
-> ```javascript
 > hexo init my-blog			(举例)
 > ```
->
-> 
 
 ![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E7%9B%AE%E5%BD%95)
 

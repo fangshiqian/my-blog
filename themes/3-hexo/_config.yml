@@ -18,16 +18,16 @@ link:
     linkedin:
     # instagram: https://www.facebook.com/faker.tops
     # reddit: https://www.reddit.com/user/yelog/
-    weibo: http://weibo.com/u/2307534817
+    weibo: https://weibo.com/u/5358080550
     # jianli: https://www.jianshu.com/u/ff56736de7cf
     # zhihu: https://www.zhihu.com/people/jaytp/activities
     csdn:
     # oschina: https://my.oschina.net/yelog
     # juejin: https://my.oschina.net/yelog
-    email: qfang576@gmail.com
+    email: 1143370870@qq.com
     qq: 1143370870
     # kugou: https://www.kugou.com/
-    # neteasemusic: https://music.163.com/#/user/home?id=88151013
+    neteasemusic: https://music.163.com/playlist?id=3096702544&userid=283641719
 
 ##########多作者模式############
 author:
@@ -80,7 +80,7 @@ bottom_text: ©2016-2019 Yelog
 # 自定义页面最下方的站点版权信息
 # 如果不填，则自定义为 ©2017 author (这个author为hexo根目录_config.yml中配置的)
 
-reward: true
+reward: false
 # true 开启打赏功能
 
 searchAll: true

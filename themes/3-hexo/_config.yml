@@ -167,7 +167,7 @@ highlight:
   lineNum: true # true显示行号
   theme: github
 # 代码高亮主题,效果可以查看 https://highlightjs.org/static/demo/
-# 支持主题：
+# 支持主题：sublime
 # sublime : 参考sublime的高亮主题
 # darcula : 参考idea中的darcula的主题
 # atom-dark : 参考Atom的dark主题

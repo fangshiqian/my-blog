@@ -28,19 +28,7 @@ Vue 不支持IE8 及以下版本,因为 Vue 使用了 IE8 无法模拟的 ECMASc
 
 ![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E7%AE%80%E5%8D%95%E7%90%86%E8%A7%A3Vue)
 
-#### (2) 安装
-
-* 直接下载
-  * 开发版本：https://cn.vuejs.org/js/vue.js
-  * 生产版本：https://cn.vuejs.org/js/vue.min.js
-* CDN
-  * `<script src="https://cdn.jsdelivr.net/npm/vue"></script>` 最新稳定版
-  * `<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>` 指定版本
-* 使用 `npm` 下载
-  * `npm install vue` 最新稳定版
-  * `npm install vue@版本号` 指定版本
-
-#### (3) 使用举例
+#### 
 
 ```html
 <!DOCTYPE html>
@@ -88,42 +76,7 @@ Vue 不支持IE8 及以下版本,因为 Vue 使用了 IE8 无法模拟的 ECMASc
 </html>
 ```
 
-### 3. Vue 实例 (多看)
-
-> ​	每个Vue应用都是通过用Vue函数创建一个新的Vue 实例开始的
-
-```js
-var app = new Vue({
-	// 选项
-})
-```
-
-当创建一个Vue实例时,你可以传入一个**选项对象**下面的就是使用这个选项创建想要的**行为**
-
-例如:
-
-* el
-* data(这里的数据会放到视图里面)
-* methods(方法)
-* watch()
-* computed()
-* . . . 
-
-#### (1) 实例选项 - el
-
-* 不能是html、body节点
-* el只能作用到单一节点上
-
-#### (2) 实例选项 - data
-
-官方一点说: data不是普通数据,这种数据我们称之为**响应式**数据,用来驱动视图更新的数据
-
-自己理解: data里面的数据就是渲染到视图(html)上的数据
-
-注意:
-
-* 模板中访问的数据,必须初始化到data中
-* 模板无法访问Vue实例之外的数据
+* 
 
 ```js
 const a = 1

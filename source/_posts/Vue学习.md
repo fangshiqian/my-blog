@@ -166,52 +166,52 @@ const a = 1
 
 a: 文本
 
-* 数据绑定最常见的形式就是使用"Mustache"语法(双大括号)的文本插值
+ 数据绑定最常见的形式就是使用"Mustache"语法(双大括号)的文本插值
 
-* ```html
+ ```html
   <p>{{ message }}</p>
   <span>{{ message }}</span>
   <strong>{{ message }}</strong>
-  ```
+ ```
 
 b: JavaScript表达式
 
-* {{}} 中可以有一些简单的JavaScript逻辑运算:
+ `双大括号` 中可以有一些简单的JavaScript逻辑运算:
 
-* ```html
+ ```html
   <p>{{ number + 1 }}</p>
   <p>{{ number + 1 > 10 ? 'number大于10' : 'number小于10' }}</p>
   <p>{{ arr }}</p>
   <p>{{ message.split('').reverse().join('') }}</p>
-  ```
+ ```
 
 c:  属性
 
-* ```html
+ ```html
   <p v-bind:title="message">花括号不能使用在属性中</p>
   <a v-bind:href="url">去百度</a>
-  ```
+ ```
 
-* 可以简写
+ 可以简写
 
-* ```html
+ ```html
   <p :title="message">花括号不能使用在属性中</p>
   <a :href="url">去百度</a>
-  ```
+ ```
 
-* 后面可以作为动态属性使用
+ 后面可以作为动态属性使用
 
-* 属性只中的写法和文本插值中的写法一致，也可以写简单的 JavaScript 运算表达式：
+ 属性只中的写法和文本插值中的写法一致，也可以写简单的 JavaScript 运算表达式：
 
-* ```html
+ ```html
   <p :title="message.split('').reverse().join('')">Hello World</p>
   <p :title="1 + 1">属性中的表达式</p>
   <p :title="number + 1 > 10 ? 'number大于10' : 'number小于10'">属性中的表达式</p>
-  ```
+ ```
 
-*  **{{}}**怎么写，那么 `v-bind` 属性绑定也怎么写
+`双大括号`怎么写，那么 `v-bind` 属性绑定也怎么写
 
-d: 原始 HTML 字符串
+d:  原始 HTML 字符串
 
 ```html
 <div>{{ htmlStr }}</div>

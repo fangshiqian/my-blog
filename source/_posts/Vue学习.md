@@ -166,68 +166,7 @@ const a = 1
 
 
 
-### 4. 模板语法(多看)
 
-> ​	官方: Vue.js 使用了基于 HTML 的模板语法，允许开发者声明式地将 DOM 绑定至底层 Vue 实例的数据。所有 Vue.js 的模板都是合法的 HTML ，所以能被遵循规范的浏览器和 HTML 解析器解析。
-
-#### (1) 插值
-
-a: 文本
-
-* 数据绑定最常见的形式就是使用"Mustache"语法(双大括号)的文本插值
-
-* ```html
-  <p>{{ message }}</p>
-  <span>{{ message }}</span>
-  <strong>{{ message }}</strong>
-  ```
-
-b: JavaScript表达式
-
-* {{}} 中可以有一些简单的JavaScript逻辑运算:
-
-* ```html
-  <p>{{ number + 1 }}</p>
-  <p>{{ number + 1 > 10 ? 'number大于10' : 'number小于10' }}</p>
-  <p>{{ arr }}</p>
-  <p>{{ message.split('').reverse().join('') }}</p>
-  ```
-
-c:  属性
-
-* ```html
-  <p v-bind:title="message">花括号不能使用在属性中</p>
-  <a v-bind:href="url">去百度</a>
-  ```
-
-* 可以简写
-
-* ```html
-  <p :title="message">花括号不能使用在属性中</p>
-  <a :href="url">去百度</a>
-  ```
-
-* 后面可以作为动态属性使用
-
-* 属性只中的写法和文本插值中的写法一致，也可以写简单的 JavaScript 运算表达式：
-
-* ```html
-  <p :title="message.split('').reverse().join('')">Hello World</p>
-  <p :title="1 + 1">属性中的表达式</p>
-  <p :title="number + 1 > 10 ? 'number大于10' : 'number小于10'">属性中的表达式</p>
-  ```
-
-*  **{{}}**怎么写，那么 `v-bind` 属性绑定也怎么写
-
-d: 原始 HTML 字符串
-
-* ```html
-  <div>{{ htmlStr }}</div>
-  <!-- 使用 v-html 指令渲染 html 标签内容字符串 -->
-  <div v-html="htmlStr"></div>
-  ```
-
-* v-html 中绑定的 html 内容数据不能使用数据绑定
 
 ### 5. 计算属性和侦听器
 

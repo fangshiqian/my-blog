@@ -229,7 +229,34 @@ v-html 中绑定的 html 内容数据不能使用数据绑定
 
 ### 8. 列表渲染
 
-#### (1)
+#### (1) 遍历数组
+
+html:
+
+```html
+<ul id="v-for-object" class="demo">
+  <li v-for="value in object">
+    {{ value }}
+  </li>
+</ul>
+```
+
+js:
+
+```html
+new Vue({
+  el: '#v-for-object',
+  data: {
+    object: {
+      title: 'How to do lists in Vue',
+      author: 'Jane Doe',
+      publishedAt: '2016-04-10'
+    }
+  }
+})
+```
+
+
 
 ### 9. 事件处理
 

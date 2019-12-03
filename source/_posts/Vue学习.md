@@ -1,11 +1,3 @@
----
-title: Vue学习
-date: 2018-12-03 20:17:00
-top:
-categories: 学习
-tags: Vue学习
----
-
 ## 基础
 
 ### 1. 安装
@@ -221,13 +213,13 @@ c:  属性
 
 d: 原始 HTML 字符串
 
-* ```html
-  <div>{{ htmlStr }}</div>
-  <!-- 使用 v-html 指令渲染 html 标签内容字符串 -->
-  <div v-html="htmlStr"></div>
-  ```
+```html
+<div>{{ htmlStr }}</div>
+<!-- 使用 v-html 指令渲染 html 标签内容字符串 -->
+<div v-html="htmlStr"></div>
+```
 
-* v-html 中绑定的 html 内容数据不能使用数据绑定
+v-html 中绑定的 html 内容数据不能使用数据绑定
 
 ### 5. 计算属性和侦听器
 

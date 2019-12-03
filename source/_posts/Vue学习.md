@@ -28,97 +28,6 @@ Vue 不支持IE8 及以下版本,因为 Vue 使用了 IE8 无法模拟的 ECMASc
 
 ![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E7%AE%80%E5%8D%95%E7%90%86%E8%A7%A3Vue)
 
-#### 
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <div id="app">
-        <h1>{{masges}}</h1>
-        <p>姓名：{{user.name}}</p>
-        <p>年龄：{{user.age}}</p>
-        <p>性别：{{user.gender === 0 ? '男':'女'}}</p>
-        <ul>
-            <li v-for='itme in biaoqian'>{{itme}}</li>
-        </ul>
-    </div>
-    <!-- 1. 安装vue.js
-        2. 创建vue 
-        3. 根据视图抽象 data 里面的数据
-        4. 使用 vue 语法把数据绑定到视图中 -->
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script>
-        const app = new Vue({
-            // 告诉 vue管理视图的入口
-            el:'#app',
-            // 可以理解为data中的数据渲染到视图里面
-            data: {
-                masges:'hello vue.js',
-                user:{
-                    name: '里斯',
-                    age: 19,
-                    gender: 0
-                },
-                biaoqian:['吃饭','睡觉','打豆豆S']
-            },
-            methods: {
-            }
-        })
-    </script>
-</body>
-</html>
-```
-
-* 
-
-```js
-const a = 1
-    const app = new Vue({
-      /**
-       * 告诉 Vue 管理视图的入口
-       */
-      el: '#app',
-      /**
-       * 这个 data 就好比之前使用 art-template 模板引擎的数据一样的
-       * 我们可以直接在被 Vue 管理的视图中使用 data 中的数据绑定
-       */
-      data: {
-        message: 'Hello Vue.js!',
-        user: {
-          name: '张三',
-          age: 18,
-          gender: 0 // 0 男，1 女
-        },
-        todos: ['吃饭', '睡觉', '打豆豆'],
-        count: '',
-        num: 0, // 数字
-        str: '', // 字符串
-        isSeen: false, // 布尔值
-        arr: [], // 空数组
-        /**
-         * 对于对象的修改
-         * 1. 没有初始化的对象成员如果修改不会更新视图
-         * 2. 也有方式可以动态添加未初始化的数据成员并且能更新视图（后面说）
-         * 3. 直接对对象进行重新赋值可以实现视图更新
-         *   xxx = 新的数据对象，例如 app.obj = { a: 123 }
-         * 建议：最好把所有需要的数据都初始化到 data 中来
-         */
-        obj: {
-          // a: 0
-        } // 对象，没有初始化的对象成员如果修改不会更新视图
-      }
-    })
-```
-
-
-
 
 
 ### 5. 计算属性和侦听器
@@ -129,7 +38,7 @@ const a = 1
 
 ### 8. 列表渲染
 
-#### (1) 便利数组
+#### (1)
 
 ### 9. 事件处理
 

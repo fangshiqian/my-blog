@@ -258,6 +258,8 @@ new Vue({
 
 结果：
 
+![](https://raw.githubusercontent.com/fangshiqian/mtup/master/mtup/%E5%81%9A%E5%AE%A3%E4%BC%A05w7e)
+
 ### 9. 事件处理
 
 ### 10. 表单输入绑定

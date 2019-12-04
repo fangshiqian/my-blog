@@ -39,7 +39,7 @@ author:
 
 # 文章分类设置
 category:
-  num: true # 分类显示文章数
+  num: false # 分类显示文章数
   sub: true # 开启多级分类
   width:
     lg: 150 # 1468px<屏幕宽度 左侧分类宽度

@@ -1,3 +1,12 @@
+---
+title: 1.Vue基础
+date: 2019-12-04 13:47:57
+top: 
+categories:
+   - 学习
+   - Vue
+tags: Vue
+---
 ## 基础
 
 ### 1. 安装

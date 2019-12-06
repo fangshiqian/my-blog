@@ -1,5 +1,5 @@
 ---
-title: Hello Word-1
+title: Hello Wor
 date: 2019-11-27 17:05:38
 top: 1
 ---

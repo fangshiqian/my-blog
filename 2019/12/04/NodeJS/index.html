@@ -1,0 +1,2260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Node-JS | 方世谦</title>
+  <meta name="keywords" content=" Node-JS ">
+  <meta name="description" content="Node-JS | 方世谦">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="keywords" content="微信小程序">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微信小程序">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;04&#x2F;%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F&#x2F;index.html">
+<meta property="og:site_name" content="方世谦">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-12-07T09:05:51.412Z">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/my-blog/img/favicon.ico">
+
+<link href="/my-blog/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/my-blog/css/hl_theme/github.css?v=1.0.1" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/my-blog/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/my-blog/js/iconfont.js?v=1.0.1" ></script>
+
+<link rel="alternate" href="/my-blog/atom.xml" title="方世谦" type="application/atom+xml">
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="/my-blog">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/my-blog/" class="avatar_target">
+    <img class="avatar" src="/my-blog/img/Fshiqian.jpg" />
+</a>
+<div class="author">
+    <span>方世谦</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="rss" href="/atom.xml" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-rss"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="github" href="https://github.com/fangshiqian" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+        
+        <a title="weibo" href="https://weibo.com/u/5358080550" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+        <a title="email" href="mailto:1143370870@qq.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=1143370870&site=qq&menu=yes" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="neteasemusic" href="https://music.163.com/playlist?id=3096702544&amp;userid=283641719" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-neteasemusic"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+<a class="more-menus">更多菜单</a>
+
+
+<ul>
+    <li><div class="all active">全部文章<small>(23)</small></div></li>
+    
+        
+            
+            <li><div data-rel="工具">工具<small>(3)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="学习"><i class="fold iconfont icon-right"></i>学习<small>(18)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="React">React<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="Vue">Vue<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="微信程序">微信程序<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="Web入门">Web入门<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="git">git<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="Ajax">Ajax<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="JavaScript">JavaScript<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="Webpack">Webpack<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="js高级">js高级<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="动画、响应式、flex">动画、响应式、flex<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="WebAPI">WebAPI<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="jQuery">jQuery<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="CSS">CSS<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="Node-JS">Node-JS<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="常用网址">常用网址<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    <a class="dynamic-menu " target="_blank"  href="https://fangshiqian.github.io/my-blog/">方世谦</a>
+    
+    
+    <a class="dynamic-menu " target="_blank"  href="https://github.com/fangshiqian">github</a>
+    
+    </div>
+    <div></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="23">
+<input type="hidden" id="yelog_site_word_count" value="63k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode==13){return false;}">
+        <input class="search" type="text" placeholder="以 in: 开头进行全文搜索" autocomplete="off"id="local-search-input" >
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <li class="article-tag-list-item">
+        <a class="color3">工具</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">React</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">Vue</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">Web入门</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">git</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">常用网址</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">常见问题</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">微信小程序</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">谷歌插件</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Ajax</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">JavaScript</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Webpack</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">js高级</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">动画、响应式、flex</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">移动端项目</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">WebAPI</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">jQuery</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">异步编程、Promise、Async函数</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">css</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Node-JS</a>
+    </li>
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        <a id="top" class=""
+           href="/my-blog/2019/11/27/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello Wor">Hello Wor</span>
+            <span class="post-date" title="2019-11-27 17:05:38">2019/11/27</span>
+        </a>
+        
+        <a  class="学习 微信程序 "
+           href="/my-blog/2019/12/04/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"
+           data-tag="微信小程序"
+           data-author="" >
+            <span class="post-title" title="微信小程序">微信小程序</span>
+            <span class="post-date" title="2019-12-04 19:58:58">2019/12/04</span>
+        </a>
+        
+        <a  class="学习 Vue "
+           href="/my-blog/2019/12/04/Vue/"
+           data-tag="Vue"
+           data-author="" >
+            <span class="post-title" title="Vue">Vue</span>
+            <span class="post-date" title="2019-12-04 13:47:57">2019/12/04</span>
+        </a>
+        
+        <a  class="学习 Vue "
+           href="/my-blog/2019/12/04/Vue%E5%AD%A6%E4%B9%A0/"
+           data-tag="Vue"
+           data-author="" >
+            <span class="post-title" title="1.Vue基础">1.Vue基础</span>
+            <span class="post-date" title="2019-12-04 13:47:57">2019/12/04</span>
+        </a>
+        
+        <a  class="学习 jQuery "
+           href="/my-blog/2019/12/04/jQuery/"
+           data-tag="jQuery"
+           data-author="" >
+            <span class="post-title" title="jQuery">jQuery</span>
+            <span class="post-date" title="2019-12-04 09:59:26">2019/12/04</span>
+        </a>
+        
+        <a  class="学习 React "
+           href="/my-blog/2019/12/04/React/"
+           data-tag="React"
+           data-author="" >
+            <span class="post-title" title="React">React</span>
+            <span class="post-date" title="2019-12-04 09:59:15">2019/12/04</span>
+        </a>
+        
+        <a  class="学习 Node-JS "
+           href="/my-blog/2019/12/04/NodeJS/"
+           data-tag="Node-JS"
+           data-author="" >
+            <span class="post-title" title="Node-JS">Node-JS</span>
+            <span class="post-date" title="2019-12-04 09:47:42">2019/12/04</span>
+        </a>
+        
+        <a  class="学习 Ajax "
+           href="/my-blog/2019/12/04/Ajax/"
+           data-tag="Ajax"
+           data-author="" >
+            <span class="post-title" title="Ajax">Ajax</span>
+            <span class="post-date" title="2019-12-04 09:47:05">2019/12/04</span>
+        </a>
+        
+        <a  class="学习 JavaScript "
+           href="/my-blog/2019/12/04/JavaScript/"
+           data-tag="JavaScript"
+           data-author="" >
+            <span class="post-title" title="JavaScript">JavaScript</span>
+            <span class="post-date" title="2019-12-04 09:46:51">2019/12/04</span>
+        </a>
+        
+        <a  class="学习 动画、响应式、flex "
+           href="/my-blog/2019/12/04/%E5%8A%A8%E7%94%BB%E3%80%81%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80%E4%B8%8Eflex%E5%B8%83%E5%B1%80/"
+           data-tag="动画、响应式、flex"
+           data-author="" >
+            <span class="post-title" title="动画、响应式、flex">动画、响应式、flex</span>
+            <span class="post-date" title="2019-12-04 09:46:34">2019/12/04</span>
+        </a>
+        
+        <a  class="学习 "
+           href="/my-blog/2019/11/30/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/"
+           data-tag="移动端项目"
+           data-author="" >
+            <span class="post-title" title="移动端项目(类似今日头条)">移动端项目(类似今日头条)</span>
+            <span class="post-date" title="2019-11-30 20:33:18">2019/11/30</span>
+        </a>
+        
+        <a  class="学习 "
+           href="/my-blog/2019/11/30/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"
+           data-tag="常见问题"
+           data-author="" >
+            <span class="post-title" title="常见问题">常见问题</span>
+            <span class="post-date" title="2019-11-30 11:47:53">2019/11/30</span>
+        </a>
+        
+        <a  class="学习 "
+           href="/my-blog/2019/11/28/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B--Promise%E4%B8%8EAsync/"
+           data-tag="异步编程、Promise、Async函数"
+           data-author="" >
+            <span class="post-title" title="异步编程--Promise与Async">异步编程--Promise与Async</span>
+            <span class="post-date" title="2019-11-28 19:50:14">2019/11/28</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/my-blog/2019/11/27/PersonageHexo/"
+           data-tag="工具"
+           data-author="" >
+            <span class="post-title" title="搭建使用 Hexo 结合 GitHub Pages 搭建静态网 站">搭建使用 Hexo 结合 GitHub Pages 搭建静态网 站</span>
+            <span class="post-date" title="2019-11-27 20:42:57">2019/11/27</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/my-blog/2019/11/23/tool/"
+           data-tag="工具"
+           data-author="" >
+            <span class="post-title" title="工具">工具</span>
+            <span class="post-date" title="2019-11-23 15:13:47">2019/11/23</span>
+        </a>
+        
+        <a  class="常用网址 "
+           href="/my-blog/2019/10/27/%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80/"
+           data-tag="常用网址"
+           data-author="" >
+            <span class="post-title" title="常用网址">常用网址</span>
+            <span class="post-date" title="2019-10-27 17:05:38">2019/10/27</span>
+        </a>
+        
+        <a  class="学习 WebAPI "
+           href="/my-blog/2019/02/04/WebAPI/"
+           data-tag="WebAPI"
+           data-author="" >
+            <span class="post-title" title="WebAPI">WebAPI</span>
+            <span class="post-date" title="2019-02-04 13:34:50">2019/02/04</span>
+        </a>
+        
+        <a  class="学习 CSS "
+           href="/my-blog/2019/01/05/css/"
+           data-tag="css"
+           data-author="" >
+            <span class="post-title" title="css">css</span>
+            <span class="post-date" title="2019-01-05 09:33:44">2019/01/05</span>
+        </a>
+        
+        <a  class="学习 Webpack "
+           href="/my-blog/2018/12/03/Webpack/"
+           data-tag="Webpack"
+           data-author="" >
+            <span class="post-title" title="Webpack">Webpack</span>
+            <span class="post-date" title="2018-12-03 09:33:09">2018/12/03</span>
+        </a>
+        
+        <a  class="学习 git "
+           href="/my-blog/2018/12/03/git/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git">git</span>
+            <span class="post-date" title="2018-12-03 09:33:09">2018/12/03</span>
+        </a>
+        
+        <a  class="学习 js高级 "
+           href="/my-blog/2018/12/03/js%E9%AB%98%E7%BA%A7/"
+           data-tag="js高级"
+           data-author="" >
+            <span class="post-title" title="js高级">js高级</span>
+            <span class="post-date" title="2018-12-03 09:33:09">2018/12/03</span>
+        </a>
+        
+        <a  class="学习 Web入门 "
+           href="/my-blog/2018/12/03/Web%E5%85%A5%E9%97%A8/"
+           data-tag="Web入门"
+           data-author="" >
+            <span class="post-title" title="Web入门">Web入门</span>
+            <span class="post-date" title="2018-12-03 09:33:09">2018/12/03</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/my-blog/2018/11/30/%E8%B0%B7%E6%AD%8C%E6%8F%92%E4%BB%B6/"
+           data-tag="谷歌插件"
+           data-author="" >
+            <span class="post-title" title="谷歌插件(可以访问谷歌商店)">谷歌插件(可以访问谷歌商店)</span>
+            <span class="post-date" title="2018-11-30 01:06:37">2018/11/30</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-NodeJS" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Node-JS</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="学习">学习</a>/
+            
+                <a  data-rel="Node-JS">Node-JS</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color3">Node-JS</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2019-12-07 09:05:51'>2019-12-04 09:47</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:10.9k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Node-js"><span class="toc-text">Node.js</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Node-js基本概念"><span class="toc-text">Node.js基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Node-js-安装"><span class="toc-text">Node.js-安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#js组成"><span class="toc-text">js组成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Node-js基本使用-REPL-了解-【cmd】"><span class="toc-text">Node.js基本使用-REPL(了解)【cmd】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Node-js基本使用-执行js文件【git-bash-here】"><span class="toc-text">Node.js基本使用-执行js文件【git bash here】</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Node-js基本使用-在vscode中打开"><span class="toc-text">Node.js基本使用-在vscode中打开</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Node-js-内置模块"><span class="toc-text">Node.js-内置模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Node-js-js内置模块基本使用-文件读写操作"><span class="toc-text">Node.js-js内置模块基本使用-文件读写操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#终端命令-cd"><span class="toc-text">终端命令 cd</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#绝对路径"><span class="toc-text">绝对路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Path内置模块的基本使用"><span class="toc-text">Path内置模块的基本使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#path与js结合获取文件"><span class="toc-text">path与js结合获取文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#http模块-创建服务器"><span class="toc-text">http模块-创建服务器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#http模块-服务器的交互流程"><span class="toc-text">http模块-服务器的交互流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#http模块-根据不同的url响应html文件"><span class="toc-text">http模块-根据不同的url响应html文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#http模块-根据不同的url响应不同的文件"><span class="toc-text">http模块-根据不同的url响应不同的文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#http模块-get和post请求"><span class="toc-text">http模块-get和post请求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#express模块基本使用"><span class="toc-text">express模块基本使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#express-托管静态资源"><span class="toc-text">express-托管静态资源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#express模块-get路由"><span class="toc-text">express模块-get路由</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#一条笑话接口"><span class="toc-text">一条笑话接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#随机笑话接口"><span class="toc-text">随机笑话接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#高级版随机笑话接口"><span class="toc-text">高级版随机笑话接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get请求参数获取"><span class="toc-text">get请求参数获取</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#笑话接口带参数"><span class="toc-text">笑话接口带参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#post路由"><span class="toc-text">post路由</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#post数据获取（普通文本）"><span class="toc-text">post数据获取（普通文本）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#post数据获取（文件上传）"><span class="toc-text">post数据获取（文件上传）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#中间件"><span class="toc-text">中间件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#node-js模块化-自己写第三方模块"><span class="toc-text">node.js模块化-自己写第三方模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自己写的计算器模块"><span class="toc-text">自己写的计算器模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#通过自己写中间件设置跨域"><span class="toc-text">通过自己写中间件设置跨域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常见文件夹名"><span class="toc-text">常见文件夹名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#跨域"><span class="toc-text">跨域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#浏览器的同源"><span class="toc-text">浏览器的同源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#跨域方案-jsonp"><span class="toc-text">跨域方案-jsonp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#跨域方案-CORS"><span class="toc-text">跨域方案-CORS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#中间件设置跨域"><span class="toc-text">中间件设置跨域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#补充vscode主题变色"><span class="toc-text">-补充vscode主题变色</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nodemon-自动重新运行"><span class="toc-text">nodemon-自动重新运行</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ES6-基本概念"><span class="toc-text">ES6-基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ES6-let"><span class="toc-text">ES6-let</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES6-const"><span class="toc-text">ES6-const</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES6-对象的属性和方法简化写法"><span class="toc-text">ES6-对象的属性和方法简化写法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES-6-模板字符串"><span class="toc-text">ES-6-模板字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#知识点一"><span class="toc-text">知识点一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES6-函数默认值"><span class="toc-text">ES6-函数默认值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES6-对象解构"><span class="toc-text">ES6-对象解构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES6-对象解构实际应用"><span class="toc-text">ES6-对象解构实际应用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#结合函数用"><span class="toc-text">结合函数用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#函数参数解构结合默认值"><span class="toc-text">函数参数解构结合默认值</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES6-数组解构"><span class="toc-text">ES6-数组解构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES6-对象展开"><span class="toc-text">ES6-对象展开</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES6-数组展开"><span class="toc-text">ES6-数组展开</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES6-箭头函数"><span class="toc-text">ES6-箭头函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES6-箭头函数中的this"><span class="toc-text">ES6-箭头函数中的this</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#终端"><span class="toc-text">终端</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Mysql-数据库"><span class="toc-text">Mysql-数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据库-基本使用"><span class="toc-text">数据库-基本使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sql语句-增"><span class="toc-text">sql语句-增</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sql语句-删"><span class="toc-text">sql语句-删</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sql语句-改"><span class="toc-text">sql语句-改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sql语句-查"><span class="toc-text">sql语句-查</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mysql模块使用"><span class="toc-text">mysql模块使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mysql-ithm模块使用"><span class="toc-text">mysql-ithm模块使用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#chrome允许跨域"><span class="toc-text">chrome允许跨域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#英雄管理项目"><span class="toc-text">英雄管理项目</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#项目说明"><span class="toc-text">项目说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#接口文档"><span class="toc-text">接口文档</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#项目初始化"><span class="toc-text">项目初始化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#英雄列表"><span class="toc-text">英雄列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#查询英雄详情"><span class="toc-text">查询英雄详情</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#新增英雄"><span class="toc-text">新增英雄</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#英雄删除"><span class="toc-text">英雄删除</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#编辑英雄"><span class="toc-text">编辑英雄</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#用户注册"><span class="toc-text">用户注册</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#用户登录"><span class="toc-text">用户登录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#退出登录"><span class="toc-text">退出登录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#整合静态资源服务器"><span class="toc-text">整合静态资源服务器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mockjs-模拟数据生成"><span class="toc-text">Mockjs-模拟数据生成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#验证码"><span class="toc-text">验证码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#密码加密"><span class="toc-text">密码加密</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#会话技术"><span class="toc-text">会话技术</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#cookie-甜饼，曲奇"><span class="toc-text">cookie(甜饼，曲奇)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#session"><span class="toc-text">session</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#token"><span class="toc-text">token</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#登录状态维持-session的使用"><span class="toc-text">登录状态维持(session的使用)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#同步和异步"><span class="toc-text">同步和异步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#echarts基本使用"><span class="toc-text">-echarts基本使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#快捷键"><span class="toc-text">快捷键</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#补充typora主题"><span class="toc-text">补充typora主题</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h2><p>通俗理解为就是可以脱离浏览器，运行js代码的一个环境</p>
+<h3 id="Node-js基本概念"><a href="#Node-js基本概念" class="headerlink" title="Node.js基本概念"></a>Node.js基本概念</h3><ul>
+<li>基于chrome v8引擎的javascript运行环境</li>
+<li>浏览器中有一个可以解析js的解析器<ul>
+<li>解析器（翻译官）<ul>
+<li>把编程语言翻译成计算机可以是别的二进制</li>
+<li>js……（翻译官）→计算机执行</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>js运行环境<ul>
+<li>通过node.js可以直接运行js代码</li>
+</ul>
+</li>
+</ul>
+<h3 id="Node-js-安装"><a href="#Node-js-安装" class="headerlink" title="Node.js-安装"></a>Node.js-安装</h3><p>下载地址：<code>http://nodejs.org/en/</code></p>
+<h3 id="js组成"><a href="#js组成" class="headerlink" title="js组成"></a>js组成</h3><ul>
+<li>浏览器端<ul>
+<li>ECMAScript:js语法</li>
+<li>DOM：文档对象模型<ul>
+<li>约定操作dom元素的语法</li>
+</ul>
+</li>
+<li>BOM：浏览器对象模型<ul>
+<li>操纵浏览器语法</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>服务器端<ul>
+<li>ECMAScript:js基础语法</li>
+<li>BOM一些常用的api</li>
+<li>模块：（类似之前的jQ，swiper……）<ul>
+<li>内置模块</li>
+<li>第三方模块</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Node-js基本使用-REPL-了解-【cmd】"><a href="#Node-js基本使用-REPL-了解-【cmd】" class="headerlink" title="Node.js基本使用-REPL(了解)【cmd】"></a>Node.js基本使用-REPL(了解)【cmd】</h3><ul>
+<li><p>read eval print loop</p>
+</li>
+<li><p>打开黑窗</p>
+</li>
+<li><p>输入node回车</p>
+</li>
+<li><p>写js代码回车运行</p>
+</li>
+<li><p>循环步骤3</p>
+</li>
+</ul>
+<h3 id="Node-js基本使用-执行js文件【git-bash-here】"><a href="#Node-js基本使用-执行js文件【git-bash-here】" class="headerlink" title="Node.js基本使用-执行js文件【git bash here】"></a>Node.js基本使用-执行js文件【git bash here】</h3><ul>
+<li>写好一个js文件</li>
+<li>内部有node.js支持的代码</li>
+<li>打开黑窗（git bash here）支持的代码</li>
+<li>输入<code>node 文件名</code>回车</li>
+<li>运行</li>
+<li>注意：<ul>
+<li>文件名不需要打全，写个开头+tab自动提示</li>
+<li>黑窗打开位置和js在一个文件夹下</li>
+<li>文件名不要叫node.js</li>
+</ul>
+</li>
+</ul>
+<h3 id="Node-js基本使用-在vscode中打开"><a href="#Node-js基本使用-在vscode中打开" class="headerlink" title="Node.js基本使用-在vscode中打开"></a>Node.js基本使用-在vscode中打开</h3><ul>
+<li>右键文件→在终端中打开→输入命令运行(<code>node 文件名</code>)</li>
+<li>关闭终端的快捷键 ctrl+~</li>
+</ul>
+<h3 id="Node-js-内置模块"><a href="#Node-js-内置模块" class="headerlink" title="Node.js-内置模块"></a>Node.js-内置模块</h3><p>脱离浏览器的限制，通过内置模块可以实现很多在浏览器中干不了的事情</p>
+<p>官方文档：<code>http://nodejs.cn/api/fs.html</code></p>
+<h3 id="Node-js-js内置模块基本使用-文件读写操作"><a href="#Node-js-js内置模块基本使用-文件读写操作" class="headerlink" title="Node.js-js内置模块基本使用-文件读写操作"></a>Node.js-js内置模块基本使用-文件读写操作</h3><p>文件基本读写会用即可</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> fs=<span class="built_in">require</span>(<span class="string">'fs'</span>);<span class="comment">//导入fs模块</span></span><br><span class="line"><span class="comment">//readFile读取文件</span></span><br><span class="line"><span class="comment">//参数1：文件路径</span></span><br><span class="line"><span class="comment">//参数2：选项 可选参数</span></span><br><span class="line"><span class="comment">//参数3：回调函数</span></span><br><span class="line"><span class="comment">//err:如果读取失败，保存的是错误信息</span></span><br><span class="line"><span class="comment">//data:读取的结果，读取成功的话才有</span></span><br><span class="line">fs.readFile(path,formdata,fn(err,data)&#123;</span><br><span class="line">            <span class="keyword">if</span>(err==<span class="literal">null</span>)&#123;</span><br><span class="line">    			<span class="built_in">console</span>.log(data);<span class="comment">//如果没有错误err为null</span></span><br><span class="line">			&#125;        </span><br><span class="line"> 	</span><br><span class="line">  &#125;)</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">  <span class="comment">//writeFile写文件</span></span><br><span class="line">  <span class="comment">//参数1：文件路径</span></span><br><span class="line">  <span class="comment">//参数2：写入的内容</span></span><br><span class="line">  <span class="comment">//参数3：选项 可选参数</span></span><br><span class="line">  <span class="comment">//参数4：回调函数</span></span><br><span class="line">  fs.writeFile(path,content,formdata,fn(err)&#123;</span><br><span class="line">               <span class="keyword">if</span>(err==<span class="literal">null</span>)&#123;</span><br><span class="line">      				<span class="built_in">console</span>.log(<span class="string">'写入成功'</span>);<span class="comment">//err为null,说明文件写入成功</span></span><br><span class="line">  			&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      			<span class="built_in">console</span>.log(<span class="string">'写入失败'</span>);</span><br><span class="line">  				&#125;</span><br><span class="line">             &#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="终端命令-cd"><a href="#终端命令-cd" class="headerlink" title="终端命令 cd"></a>终端命令 cd</h3><ul>
+<li>在终端中切换路径</li>
+<li>可以用来切换路径</li>
+<li><code>cd 路径</code> 切换到指定的目录</li>
+<li><code>cd ../</code> 切换上一级目录</li>
+<li><code>cd 文件夹</code> 切换到指定的文件夹</li>
+<li>到在其他不同级的文件夹下开启终端，可能会引起路径问题</li>
+<li><strong>在读取文件时，node.js的相对路径，相对的是终端中的路径，小黑窗所处的路径</strong></li>
+</ul>
+<h3 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a>绝对路径</h3><ul>
+<li><p>综上所述，引出在读取或者是写入文件时，采用绝对路径定位到这个文件上</p>
+</li>
+<li><p>方式</p>
+<ul>
+<li>方式一：右键你要读的文件 复制路径 进行拷贝路径<ul>
+<li>此方法换到另一个电脑上，还需要更改，因此不方便</li>
+</ul>
+</li>
+<li>方式二：结合两个<strong>全局变量</strong>，可以动态生成绝对路径 避免写死<ul>
+<li>__dirname <strong>js文件所处的文件夹</strong>的绝对路径</li>
+<li>__filename js文件的绝对路径</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//导包</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> fs=<span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"><span class="comment">//动态获取文件的绝对路径</span></span><br><span class="line"><span class="keyword">const</span> filePath=__dirname+<span class="string">'/novel/01.txt'</span>;<span class="comment">//此处注意到后面的'./novel/01.txt'不可以这样写 或者不可以'\novel\01.txt',因为\是转义符，所以需要改成'\\novel\\01.txt'</span></span><br><span class="line"><span class="comment">//读取文件</span></span><br><span class="line">fs.readFile(filePath,<span class="string">'utf-8'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">err,data</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(err==<span class="literal">null</span>)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(data);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+</li>
+</ul>
+<h3 id="Path内置模块的基本使用"><a href="#Path内置模块的基本使用" class="headerlink" title="Path内置模块的基本使用"></a>Path内置模块的基本使用</h3><ul>
+<li><p>综上所述，虽然读取文件变得动态，但是书写格式方面，还是让人不省心，于是就有了此模块的作用</p>
+</li>
+<li><p>专门用来处理路径的模块</p>
+</li>
+<li><p>方法：</p>
+<ul>
+<li>path.extname(‘info/novel.txt’);获取文件的扩展名 .txt</li>
+<li>path.dirname(‘info/novel.txt’);获取文件夹的名字 info</li>
+<li><strong>path.join(路径1，路径2，路径3……)；</strong>//把多个路径拼接到一起，保证格式正确,<strong>逗号分隔</strong></li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> filePath=path.join(<span class="string">'info'</span>,<span class="string">'./novel'</span>,<span class="string">'01.txt'</span>)</span><br><span class="line"><span class="comment">//此时，生成一个绝对路径</span></span><br><span class="line">path.join(__dirname,<span class="string">'./novel/01.txt'</span>);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="path与js结合获取文件"><a href="#path与js结合获取文件" class="headerlink" title="path与js结合获取文件"></a>path与js结合获取文件</h3><ul>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//导入js包</span></span><br><span class="line"><span class="keyword">const</span> fs=<span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"><span class="comment">//导入path包</span></span><br><span class="line"><span class="keyword">const</span> path=<span class="built_in">require</span>(<span class="string">'path'</span>);</span><br><span class="line"><span class="keyword">var</span> filePath=path.join(__dirname,<span class="string">'./novel/01.txt'</span>);</span><br><span class="line">fs.readFile(filePath,<span class="string">'utf-8'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">err,data</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(err==<span class="literal">null</span>)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(data);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="http模块-创建服务器"><a href="#http模块-创建服务器" class="headerlink" title="http模块-创建服务器"></a>http模块-创建服务器</h3><ul>
+<li><p>使用步骤：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//导包</span></span><br><span class="line"><span class="keyword">const</span> http=<span class="built_in">require</span>(<span class="string">'http'</span>);</span><br><span class="line"><span class="comment">//调用createServer方法创建服务器对象</span></span><br><span class="line"><span class="keyword">var</span> server=http.createServer(<span class="function"><span class="keyword">function</span>(<span class="params">request,response</span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//❀响应❀返回内容为中文时，会出现乱码效果，需要设置格式</span></span><br><span class="line">    <span class="comment">//content-type 内容类型</span></span><br><span class="line">    <span class="comment">//text/plain 是普通文本</span></span><br><span class="line">    <span class="comment">//charset=utf-8 编码格式</span></span><br><span class="line">    response.setHeader(<span class="string">'content-type'</span>,<span class="string">'text/plain;charset=utf-8'</span>);</span><br><span class="line">    <span class="comment">//返回内容</span></span><br><span class="line">    response.end(<span class="string">'欢迎访问服务器'</span>);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//开启服务器（监听端口） listen</span></span><br><span class="line"><span class="comment">//参数1 端口号</span></span><br><span class="line"><span class="comment">//参数2 监听地址省略的话就是本机 该处已省略</span></span><br><span class="line"><span class="comment">//参数3 开启之后的回调函数</span></span><br><span class="line">server.listen(<span class="number">1888</span>,<span class="function"><span class="keyword">function</span>(<span class="params">res</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(err==<span class="literal">null</span>)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'服务器开启成功'</span>);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'服务器开启失败'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>让电脑成为服务器</p>
+</li>
+<li><p><code>http://192.168.156.91:1888</code></p>
+</li>
+<li><p>协议：ip地址:端口号</p>
+</li>
+<li><p>端口：</p>
+<ul>
+<li>电脑和外部通讯的一个通道</li>
+<li>物理端口<ul>
+<li>usb口</li>
+<li>网线口</li>
+<li>耳机口</li>
+<li>hdmi(显示器，投影仪)</li>
+<li>……</li>
+</ul>
+</li>
+<li>虚拟端口：电脑中的软件和外部通讯的通道<ul>
+<li>只要和外部通讯的软件，都会使用某一个虚拟端口</li>
+<li>一个号位移 0开始递增</li>
+<li>虚拟端口很多</li>
+<li>但是前10000很多被用了</li>
+<li>自己使用时用10000以后，靠后一般都可以使用 一些比较另类</li>
+<li>6.8848 8888 4399 3000</li>
+<li>端口一次只能被一个程序使用</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="http模块-服务器的交互流程"><a href="#http模块-服务器的交互流程" class="headerlink" title="http模块-服务器的交互流程"></a>http模块-服务器的交互流程</h3><ul>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> http=<span class="built_in">require</span>(<span class="string">'http'</span>);</span><br><span class="line"><span class="keyword">const</span> server=http.createServer(<span class="function"><span class="keyword">function</span>(<span class="params">request,response</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//request.url获取请求的地址</span></span><br><span class="line">    <span class="comment">//decodeURI对❀请求地址❀ url进行中文解码</span></span><br><span class="line">    <span class="comment">//console.log(decodeURI(request.url))；</span></span><br><span class="line">    <span class="comment">//response.end('笑');</span></span><br><span class="line">    response.setHeader(<span class="string">'content-type'</span>,<span class="string">'text/plain;charset=utf-8'</span>);</span><br><span class="line">    <span class="keyword">const</span> requestUrl=<span class="built_in">decodeURI</span>(request.url);</span><br><span class="line">    <span class="keyword">if</span>(requestUrl==<span class="string">'/hello'</span>)&#123;</span><br><span class="line">        response.end(<span class="string">'吃了没'</span>)</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(requestUrl==<span class="string">'/饿了么'</span>)&#123;</span><br><span class="line">        response.end(<span class="string">'知道了'</span>);</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(requestUrl==<span class="string">'login'</span>)&#123;</span><br><span class="line">        response.end(<span class="string">'&lt;h1 style="background:orange;color:skyblue;"&gt;我在&lt;/h1&gt;'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">server.listen(<span class="number">1888</span>,<span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(err==<span class="literal">null</span>)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'成功！'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="http模块-根据不同的url响应html文件"><a href="#http模块-根据不同的url响应html文件" class="headerlink" title="http模块-根据不同的url响应html文件"></a>http模块-根据不同的url响应html文件</h3><ul>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//导包 http</span></span><br><span class="line"><span class="keyword">const</span> http=<span class="built_in">require</span>(<span class="string">'http'</span>);</span><br><span class="line"><span class="comment">//导包 fs</span></span><br><span class="line"><span class="keyword">const</span> fs=<span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"><span class="comment">//导包 path</span></span><br><span class="line"><span class="keyword">const</span> path=<span class="built_in">require</span>(<span class="string">'path'</span>);</span><br><span class="line"><span class="comment">//创建服务器</span></span><br><span class="line"><span class="keyword">const</span> server=http.createServer((request,response)&#123;</span><br><span class="line">	<span class="keyword">const</span> filePath=path.join(__dirname,<span class="string">'./web/index.html'</span>);</span><br><span class="line">fs.readFile(filePath,<span class="string">'utf-8'</span>,(err,data)=&gt;&#123;</span><br><span class="line">    <span class="keyword">if</span>(err==<span class="literal">null</span>)&#123;</span><br><span class="line">        response.end(data);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//开启监听</span></span><br><span class="line">server.listen(<span class="number">1888</span>,err=&gt;&#123;</span><br><span class="line">    <span class="keyword">if</span>(err==<span class="literal">null</span>)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'成功'</span>);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'失败'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h3 id="http模块-根据不同的url响应不同的文件"><a href="#http模块-根据不同的url响应不同的文件" class="headerlink" title="http模块-根据不同的url响应不同的文件"></a>http模块-根据不同的url响应不同的文件</h3><ul>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> http=<span class="built_in">require</span>(<span class="string">'http'</span>);</span><br><span class="line"><span class="keyword">const</span> fs=<span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"><span class="keyword">const</span> path=<span class="built_in">require</span>(<span class="string">'path'</span>);</span><br><span class="line"><span class="comment">//创建一个叫静态资源服务器</span></span><br><span class="line">http.createServer(<span class="function">(<span class="params">request,response</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> requestUrl=<span class="built_in">decodeURI</span>(request.url);</span><br><span class="line">   </span><br><span class="line">    <span class="keyword">var</span> fullPath=path.join(__dirname,<span class="string">'./web'</span>+requestUrl);</span><br><span class="line">    <span class="comment">//fs.readFile(fullPath,'utf-8',(err,data)=&gt;&#123;</span></span><br><span class="line">    <span class="comment">//浏览器可以自动识别绝大多数的文件格式，不需要人为设置编码</span></span><br><span class="line">    fs.readFile(fullPath,(err,data)=&gt;&#123;</span><br><span class="line">        <span class="keyword">if</span>(err==<span class="literal">null</span>)&#123;</span><br><span class="line">            response.end(data);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            response.setHeader(<span class="string">'content-type'</span>,<span class="string">'text/plain;charset=utf-8'</span>);</span><br><span class="line">            response.end(<span class="string">'&lt;h1&gt;404&lt;/h1&gt;'</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<h3 id="http模块-get和post请求"><a href="#http模块-get和post请求" class="headerlink" title="http模块-get和post请求"></a>http模块-get和post请求</h3><ul>
+<li><p><code>request.method</code>获取请求的方法</p>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//导包</span></span><br><span class="line"><span class="keyword">const</span> http=<span class="built_in">require</span>(<span class="string">'http'</span>);</span><br><span class="line"><span class="comment">//创建服务器</span></span><br><span class="line"><span class="keyword">const</span> server=http.createServer(<span class="function">(<span class="params">request,response</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(request.method==<span class="string">'GET'</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(request.url==<span class="string">'/list'</span>)&#123;</span><br><span class="line">            <span class="comment">//list相关逻辑代码</span></span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(request.url==<span class="string">'/search'</span>)&#123;</span><br><span class="line">            <span class="comment">//search相关逻辑代码</span></span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        	response.end(<span class="string">'为get请求'</span>)</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(request.method==<span class="string">'POST'</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(request.url==<span class="string">'/add'</span>)&#123;</span><br><span class="line">            <span class="comment">//add相关逻辑代码</span></span><br><span class="line">            </span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        response.end(<span class="string">'为post请求'</span>);</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line">server.listen(<span class="number">8848</span>,err=&gt;&#123;</span><br><span class="line">    <span class="keyword">if</span>(!err)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'开启成功'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+</li>
+</ul>
+<p>###　Node.js-第三方模块（npm网站）</p>
+<ul>
+<li><p>步骤：一顿ctrl+c/ctrl+v</p>
+<ul>
+<li><p>官方网站（包管家搜索界面）<code>http://www.npmjs.com</code></p>
+</li>
+<li><p>找包 官方的包检索网站 npm</p>
+</li>
+<li><p>下包 模板的网页中有命令</p>
+<ul>
+<li><p>在终端中输入npm i szhmqd23_yu</p>
+</li>
+<li><p>当前文件夹中会出现如下图所示</p>
+</li>
+</ul>
+<p><img src="C:%5CUsers%5C%E5%88%98%E6%99%93%E6%85%A7%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572008813226.png" alt="1572008813226"></p>
+</li>
+<li><p>导包 文档中也有</p>
+</li>
+<li><p>用包</p>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 导包</span></span><br><span class="line"><span class="keyword">const</span> szhmqd23_yu = <span class="built_in">require</span>(<span class="string">'szhmqd23_yu'</span>);</span><br><span class="line"><span class="comment">// 用包</span></span><br><span class="line"><span class="comment">// const res=szhmqd23_yu.add(998,2);</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> res=szhmqd23_yu.mul(<span class="number">998</span>,<span class="number">2</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res);</span><br><span class="line"></span><br><span class="line"><span class="comment">// console.log(szhmqd23_yu.mul(1,2))</span></span><br><span class="line"><span class="comment">// console.log(szhmqd23_yu.sub(1,2))</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>第三方插件使用步骤</p>
+<ul>
+<li>新建文件夹（不要写中文）</li>
+<li>初始化(打开终端输<code>pm init -y</code>或<code>pm init 自行输入</code><ul>
+<li>生成一个package.json文件</li>
+<li>保存项目的信息，比如版本，名字，使用的第三方模块</li>
+<li><code>npm init 自行输入每一项</code>(初期用的不多)</li>
+</ul>
+</li>
+<li>去npm网站找包</li>
+<li>根据提示下包<code>npm i 包名</code><ul>
+<li>package.json中增加一个dependencies把下载的包名，记录进去，和版本信息</li>
+<li>文件夹下多<ul>
+<li>node_modules所有下载的第三方模块都会在里面</li>
+<li>package-lock.json:模块名，版本号，在线地址等<ul>
+<li>为了让我们第二次下载的时候速度更快</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>根据提示导包</li>
+<li>根据提示用包</li>
+</ul>
+</li>
+<li><p>第二次下载</p>
+<ul>
+<li>保证package.json及package-lock.json中有之前下载的模块名</li>
+<li>直接输入npm i 自动读取用到的模块并下载</li>
+</ul>
+</li>
+</ul>
+<h3 id="express模块基本使用"><a href="#express模块基本使用" class="headerlink" title="express模块基本使用"></a>express模块基本使用</h3><p>相比于原生http木块 开发速度更快的web开发框架</p>
+<p>很多模板框架都是基于express</p>
+<ul>
+<li><p>使用步骤</p>
+<ul>
+<li><p>新建文件夹，非中文</p>
+</li>
+<li><p>初始化<code>npm init -y</code></p>
+</li>
+<li><p>找包</p>
+</li>
+<li><p>根据提示下包<code>npm i express</code></p>
+</li>
+<li><p>导入express</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//导包 express</span></span><br><span class="line"><span class="keyword">const</span> express=<span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="comment">//创建服务器对象 http.createServer类似</span></span><br><span class="line"><span class="keyword">const</span> app=express();</span><br><span class="line"><span class="comment">//如果请求的是/ (url为空)</span></span><br><span class="line">app.get(<span class="string">'/'</span>,(request,response)=&gt;&#123;</span><br><span class="line">    <span class="comment">//原生方法也支持</span></span><br><span class="line">    response.send(<span class="string">'hello world'</span>);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//开启服务器</span></span><br><span class="line">app.listen(<span class="number">3000</span>,err=&gt;&#123;</span><br><span class="line">    <span class="keyword">if</span>(!err)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'success'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>根据提示用包</p>
+<ul>
+<li>http模块的方法都可以使用，更建议用express</li>
+</ul>
+</li>
+</ul>
+<h3 id="express-托管静态资源"><a href="#express-托管静态资源" class="headerlink" title="express-托管静态资源"></a>express-托管静态资源</h3><ul>
+<li><p>语法:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//导包</span></span><br><span class="line"><span class="keyword">const</span> express=<span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="comment">//创建服务器</span></span><br><span class="line"><span class="keyword">const</span> app=express();</span><br><span class="line"><span class="comment">//实现静态资源服务器的功能</span></span><br><span class="line">app.use(express.static(<span class="string">'./public'</span>));<span class="comment">//相当于原生中的根据不同的url地址访问不同的文件</span></span><br><span class="line"><span class="comment">//开启服务器</span></span><br><span class="line">app.listen(<span class="number">3000</span>,err=&gt;&#123;</span><br><span class="line">    <span class="keyword">if</span>(!err)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'success'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="express模块-get路由"><a href="#express模块-get路由" class="headerlink" title="express模块-get路由"></a>express模块-get路由</h3><ul>
+<li>get请求时，url地址和后台函数（逻辑）的对应关系</li>
+<li>接口调用：浏览器调用定义在服务器的函数</li>
+<li>写接口：<ul>
+<li>根据接口文档注册路由</li>
+<li>实现逻辑</li>
+<li>返回结果</li>
+</ul>
+</li>
+</ul>
+<h3 id="一条笑话接口"><a href="#一条笑话接口" class="headerlink" title="一条笑话接口"></a>一条笑话接口</h3><ul>
+<li><p>语法:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//导包</span></span><br><span class="line"><span class="keyword">const</span> express=<span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="comment">//创建服务器</span></span><br><span class="line"><span class="keyword">const</span> app=express();</span><br><span class="line"><span class="comment">//注册路由</span></span><br><span class="line">app.get(<span class="string">'/joke'</span>,(request,response)=&gt;&#123;</span><br><span class="line">    <span class="comment">//一条笑话</span></span><br><span class="line">    response.send(<span class="string">'我是一条笑话'</span>);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//开启服务器</span></span><br><span class="line">app.listen(<span class="number">8848</span>,err=&gt;&#123;</span><br><span class="line">    <span class="keyword">if</span>(!err)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'成功'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+</li>
+</ul>
+<h3 id="随机笑话接口"><a href="#随机笑话接口" class="headerlink" title="随机笑话接口"></a>随机笑话接口</h3><ul>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express=<span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">const</span> app=express();</span><br><span class="line">app.get(<span class="string">'/randomJoke'</span>,(request,response)=&gt;&#123;</span><br><span class="line">    <span class="keyword">const</span> jokes=[<span class="string">'笑话1'</span>,<span class="string">'笑话2'</span>];</span><br><span class="line">    <span class="keyword">const</span> randomIndex=<span class="built_in">parseInt</span>(<span class="built_in">Math</span>.random()*jokes.length);</span><br><span class="line">&#125;)</span><br><span class="line">app.listen(<span class="number">3000</span>)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="高级版随机笑话接口"><a href="#高级版随机笑话接口" class="headerlink" title="高级版随机笑话接口"></a>高级版随机笑话接口</h3><ul>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express=<span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">const</span> fs=<span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"><span class="keyword">const</span> path=<span class="built_in">require</span>(<span class="string">'path'</span>);</span><br><span class="line"><span class="keyword">const</span> app=express();</span><br><span class="line"><span class="comment">//注册路由</span></span><br><span class="line">app.get(<span class="string">'/randomJokePro'</span>,(request,response)=&gt;&#123;</span><br><span class="line">    <span class="keyword">const</span> fullPath=path.join(__dirname,+<span class="string">'./data/jokes.json'</span>);</span><br><span class="line">    fs.readFile(fullPath,(err,data)=&gt;&#123;</span><br><span class="line">        <span class="keyword">if</span>(err==<span class="literal">null</span>)&#123;</span><br><span class="line">            <span class="keyword">const</span> jokesArr=<span class="built_in">JSON</span>.parse(data);</span><br><span class="line">            <span class="keyword">const</span> randomIndex=<span class="built_in">parseInt</span>(<span class="built_in">Math</span>.random()*jokesArr.length);</span><br><span class="line">            response.send(jokesArr[randomIndex]);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            response.setHeader(<span class="string">'content-type'</span>,<span class="string">'text/plain;charset=utf-8'</span>);</span><br><span class="line">            response.send(<span class="string">'404 服务器崩溃'</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)</span><br><span class="line">app.listen(<span class="number">3000</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+
+</li>
+</ul>
+<h3 id="get请求参数获取"><a href="#get请求参数获取" class="headerlink" title="get请求参数获取"></a>get请求参数获取</h3><ul>
+<li><p>通过<code>request.query</code>属性进行获取</p>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express=<span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">const</span> app=express();</span><br><span class="line">app.get(<span class="string">'/search'</span>,(request,response)=&gt;&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(request.query)；</span><br><span class="line">    <span class="built_in">console</span>.log(request.query.name);<span class="comment">//获取name属性</span></span><br><span class="line">    response.send(<span class="string">'/search'</span>);</span><br><span class="line">&#125;)</span><br><span class="line">app.listen(<span class="number">3000</span>,err=&gt;&#123;</span><br><span class="line">    <span class="keyword">if</span>(!err)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'success'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="笑话接口带参数"><a href="#笑话接口带参数" class="headerlink" title="笑话接口带参数"></a>笑话接口带参数</h3><ul>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express=<span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">const</span> fs=<span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"><span class="keyword">const</span> path=<span class="built_in">require</span>(<span class="string">'path'</span>);</span><br><span class="line"><span class="keyword">const</span> app=express();</span><br><span class="line">app.get(<span class="string">'/getSomeJoke'</span>,(request,response)=&gt;&#123;</span><br><span class="line">    <span class="keyword">const</span> num=request.query.num;</span><br><span class="line">    <span class="keyword">const</span> jokeArr=[];</span><br><span class="line">    <span class="keyword">const</span> fullPath=path.join(__dirname,<span class="string">'./data/jokes.json'</span>);</span><br><span class="line">    <span class="keyword">if</span>(num&lt;=<span class="number">490</span>)&#123;</span><br><span class="line">        	fs.readFile(fullPath,(err,data)=&gt;&#123;</span><br><span class="line">        <span class="keyword">if</span>(err==<span class="literal">null</span>)&#123;</span><br><span class="line">            <span class="keyword">const</span> jokes=<span class="built_in">JSON</span>.parse(data);</span><br><span class="line">        	<span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;num;i++)&#123;</span><br><span class="line">        	<span class="keyword">const</span> randomIndex=<span class="built_in">parseInt</span>(<span class="built_in">Math</span>.random()*jokes.length);</span><br><span class="line">           	jokeArr.push(jokes[randomIndex]);</span><br><span class="line">    		&#125;</span><br><span class="line">            response.send(&#123;</span><br><span class="line">                num,</span><br><span class="line">                msg:<span class="string">'获取成功'</span>,</span><br><span class="line">                jokes:jokeArr</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="comment">//读取失败</span></span><br><span class="line">            response.send(&#123;</span><br><span class="line">                msg:<span class="string">'文件读取失败'</span></span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">    </span><br><span class="line">   </span><br><span class="line">    &#125; <span class="keyword">else</span>&#123;</span><br><span class="line">        response.send(<span class="string">'没有那么多'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;)</span><br><span class="line">app.listen(<span class="number">3000</span>,err=&gt;&#123;</span><br><span class="line">    <span class="keyword">if</span>(!err)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'success'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h3 id="post路由"><a href="#post路由" class="headerlink" title="post路由"></a>post路由</h3><ul>
+<li><p>post请求，url和后台函数的对应关系</p>
+</li>
+<li><p>注册的方法和get类似</p>
+</li>
+<li><p>直接通过浏览器的url访问发送时get</p>
+</li>
+<li><p>可以通过postman发请求</p>
+<ul>
+<li>注意<ul>
+<li>get<ul>
+<li>参数写在param</li>
+</ul>
+</li>
+<li>post<ul>
+<li>参数写在body中</li>
+<li>有文件上传选中form-data,没有文件上传选中x-form-urlencoded</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>自己写ajax设置请求的type为post</p>
+</li>
+<li><p>默认注册的post路由中，无法获取到提交过来的参数</p>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express=<span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">const</span> app=express();</span><br><span class="line">app.post(<span class="string">'/add'</span>,(request,response)=&gt;&#123;</span><br><span class="line">    response.send(<span class="string">'我是post请求'</span>);</span><br><span class="line">&#125;)</span><br><span class="line">app.listen(<span class="number">3000</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h3 id="post数据获取（普通文本）"><a href="#post数据获取（普通文本）" class="headerlink" title="post数据获取（普通文本）"></a>post数据获取（普通文本）</h3><ul>
+<li><p><code>中间件</code>获取post提交的文本数据<code>request.body</code></p>
+</li>
+<li><p>中间件是一个特殊第三方模块</p>
+</li>
+<li><p>必须结合express才可以使用</p>
+</li>
+<li><p><code>http://www.npmjs.com/package/body-parser</code></p>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express=<span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">const</span> bodyParser=<span class="built_in">require</span>(<span class="string">'body-parser'</span>);</span><br><span class="line"><span class="keyword">const</span> app=express();</span><br><span class="line">app.use(bodyParser.urlencoded(&#123;<span class="attr">extended</span>:<span class="literal">false</span>&#125;));</span><br><span class="line">app.post(<span class="string">'/checkUsername'</span>,(request,response)=&gt;&#123;</span><br><span class="line">    <span class="keyword">const</span> username=request.body.name;</span><br><span class="line">    <span class="keyword">const</span> userArr=[<span class="string">'黑寡妇'</span>,<span class="string">'绿巨人'</span>,<span class="string">'金刚'</span>,<span class="string">'葫芦娃'</span>];</span><br><span class="line">    <span class="comment">//判断是否注册过</span></span><br><span class="line">  <span class="comment">//indexof判断数组中元素的索引，存在返回索引，不存在返回-1</span></span><br><span class="line">    <span class="keyword">if</span>(userArr.indexof(username)==<span class="number">-1</span>)&#123;</span><br><span class="line">        response.send(&#123;</span><br><span class="line">            msg:<span class="string">'恭喜你，可以注册'</span>,</span><br><span class="line">            code:<span class="number">200</span></span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        response.send(&#123;</span><br><span class="line">            msg:<span class="string">'很遗憾，已被注册'</span>,</span><br><span class="line">            code:<span class="number">400</span></span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//some传入一个回调函数</span></span><br><span class="line">    <span class="comment">//参数1：数组中的每一项</span></span><br><span class="line">    <span class="comment">//参数2：索引</span></span><br><span class="line">    <span class="comment">//内部返回一个布尔值，任意一个为true,</span></span><br><span class="line">&#125;)</span><br><span class="line">app.listen(<span class="number">3000</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+
+</li>
+</ul>
+<h3 id="post数据获取（文件上传）"><a href="#post数据获取（文件上传）" class="headerlink" title="post数据获取（文件上传）"></a>post数据获取（文件上传）</h3><ul>
+<li><p>需要中间件<code>request.files</code></p>
+</li>
+<li><p><code>http://npmjs.com/package/express-fileupload</code></p>
+</li>
+<li><p><code>request.files</code> 保存所有文件信息</p>
+</li>
+<li><p><code>request.files.xxx</code>获取key为xxx的文件信息</p>
+</li>
+<li><p><code>request.files.xxx.mv(路径，回调函数)把文件移动到某个地方</code></p>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express=<span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">const</span> path=<span class="built_in">require</span>(<span class="string">'path'</span>);</span><br><span class="line"><span class="keyword">const</span> fileUpload=<span class="built_in">require</span>(<span class="string">'express-fileUpload'</span>);</span><br><span class="line"><span class="keyword">const</span> app=express();</span><br><span class="line">app.use(fileUpload());</span><br><span class="line">app.post(<span class="string">'/upload'</span>,(request,response)=&gt;&#123;</span><br><span class="line">    <span class="comment">//icon属性的文件名</span></span><br><span class="line">    <span class="keyword">const</span> filename=request.files.icon.name;</span><br><span class="line">    <span class="keyword">const</span> filePath=path.join(__dirname,<span class="string">'./files'</span>,filename);</span><br><span class="line">    request.files.icon.mv(filePath,err=&gt;&#123;</span><br><span class="line">        <span class="keyword">if</span>(!err)&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">'上传成功'</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">    response.send(<span class="string">'/upload'</span>);</span><br><span class="line">&#125;)</span><br><span class="line">app.listen(<span class="number">3000</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+</li>
+</ul>
+<h3 id="中间件"><a href="#中间件" class="headerlink" title="中间件"></a>中间件</h3><ul>
+<li>就是一个特殊的第三方插件</li>
+<li>依赖于express</li>
+<li>中间件是请求和响应之间额外注册的毁掉含糊</li>
+<li>request和response是<code>共享</code>的</li>
+<li>中间件中为request对象额外添加属性</li>
+<li>在后续的回调函数中可以获取到</li>
+<li>中间件可以增加任意个</li>
+<li>next如果不调用，卡住，浏览器接收不到数据</li>
+<li>请求—回调函数1（中间件）–回调函数2（中间件）–&gt;响应</li>
+<li>执行的顺寻从上到下依次执行</li>
+<li>编写的位置<code>路由的前面</code></li>
+</ul>
+<h3 id="node-js模块化-自己写第三方模块"><a href="#node-js模块化-自己写第三方模块" class="headerlink" title="node.js模块化-自己写第三方模块"></a>node.js模块化-自己写第三方模块</h3><ul>
+<li><p><a href="http://commonjs.org" target="_blank" rel="noopener">http://commonjs.org</a></p>
+</li>
+<li><p>导入模块<code>require()</code></p>
+</li>
+<li><p>导出模块module.exports()</p>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//自己写的第三方模块</span></span><br><span class="line"><span class="keyword">const</span> name=<span class="string">'niubi'</span>,</span><br><span class="line">      <span class="built_in">module</span>.exports=&#123;</span><br><span class="line">          name,</span><br><span class="line">          sayHi()&#123;</span><br><span class="line">              <span class="built_in">console</span>.log(<span class="string">'nice to meet you'</span>)；</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//使用自己写的第三方模块</span></span><br><span class="line"><span class="keyword">const</span> useniubiModule=<span class="built_in">require</span>(<span class="string">'./niubi.js'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(useniubiModule);</span><br><span class="line">useniubiModule.sayHi();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>注意：</p>
+<ul>
+<li>导入模块require</li>
+<li>自己的模块写路径</li>
+<li><code>js可以省略</code></li>
+<li>模块暴露module.exports</li>
+<li>类似自调用函数底部window.xxx=值</li>
+<li>暴露多个，用对象方式</li>
+<li>重复module.exports赋值会把前面的覆盖掉</li>
+<li>抽取模块不需要运行</li>
+<li>导入的时候内部代码会自动解析</li>
+<li>module是关键字，全局变量</li>
+<li>要用哪个属性，就点哪个属性</li>
+</ul>
+</li>
+</ul>
+<h3 id="自己写的计算器模块"><a href="#自己写的计算器模块" class="headerlink" title="自己写的计算器模块"></a>自己写的计算器模块</h3><ul>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//自己写的模块</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span> (<span class="params">num1,num2</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1+num2;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sub</span>(<span class="params">num1,num2</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1-num2;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">mul</span>(<span class="params">num1,num2</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1*num2</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">divi</span>(<span class="params">num1,num2</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> num1/num2;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">module</span>.exports=&#123;</span><br><span class="line">    add,</span><br><span class="line">    sub,</span><br><span class="line">    mul,</span><br><span class="line">    divi,</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//调用自己写的第三方模块</span></span><br><span class="line"><span class="keyword">const</span> computer=<span class="built_in">require</span>(<span class="string">'./commputer'</span>);</span><br><span class="line"><span class="keyword">const</span> res=computer.add(<span class="number">5</span>,<span class="number">5</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="通过自己写中间件设置跨域"><a href="#通过自己写中间件设置跨域" class="headerlink" title="通过自己写中间件设置跨域"></a>通过自己写中间件设置跨域</h3><ul>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//自己写模块实现设置允许跨域</span></span><br><span class="line"><span class="built_in">module</span>.exports=<span class="function">(<span class="params">request,response,next</span>)=&gt;</span>&#123;</span><br><span class="line">    response.header(<span class="string">'Access-Control-Allow-Origin'</span>,<span class="string">'*'</span>);</span><br><span class="line">    next();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//使用中间件设置允许跨域</span></span><br><span class="line"><span class="keyword">const</span> express=<span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">const</span> myModule=<span class="built_in">require</span>(<span class="string">'./myModule'</span>);</span><br><span class="line"><span class="keyword">const</span> app=express();</span><br><span class="line"></span><br><span class="line">app.use(myModule);</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h3 id="常见文件夹名"><a href="#常见文件夹名" class="headerlink" title="常见文件夹名"></a>常见文件夹名</h3><ul>
+<li>utils自己抽取功能模块</li>
+<li>libs下载的第三方模块（自己手动下载的）</li>
+<li>node_modules:npm i模块名 自己手动下载的文件夹 内部保存了第三方模块</li>
+<li>static:静态资源 html css js</li>
+<li>public公共文件（静态资源）</li>
+<li>web页面（静态）</li>
+</ul>
+<h3 id="跨域"><a href="#跨域" class="headerlink" title="跨域"></a>跨域</h3><ul>
+<li><code>ajax</code>请求<code>不同源</code>的接口时候出现</li>
+<li>浏览器为了保护我们帮我们做的一件事情</li>
+<li>当<code>浏览器</code>打开页面，和调用的<code>接口</code>需要同源才可以调用</li>
+</ul>
+<h3 id="浏览器的同源"><a href="#浏览器的同源" class="headerlink" title="浏览器的同源"></a>浏览器的同源</h3><ul>
+<li>url地址的组成：<a href="http://127.0.0.1:3000/list" target="_blank" rel="noopener">http://127.0.0.1:3000/list</a><ul>
+<li>协议：http://</li>
+<li>地址：127.0.0.1</li>
+<li>端口：3000</li>
+</ul>
+</li>
+<li>同源：<ul>
+<li>浏览器打开的页面地址<code>http://127.0.0.1:5500/02-cross-origin/index.html</code></li>
+<li>页面ajax调用接口请求的地址<code>http://127.0.0.1:3000/list</code></li>
+<li>协议：地址，端口全部相同，称之为<code>同源</code><ul>
+<li>如果页面的地址和接口地址同源，浏览器就不会做任何的限制</li>
+<li>可以自由访问</li>
+</ul>
+</li>
+<li>协议，地址，端口任何一个不相同，称之为<code>不同源</code><ul>
+<li>浏览器是禁止访问的</li>
+</ul>
+</li>
+<li>实际工作中，不可避免的页面地址和接口地址绝对同源<ul>
+<li>常用的两种解决方案<ul>
+<li>jsonp:曾经最多，现在越来越少，面试经常问</li>
+<li>cors：目前用的最多的</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>往不同源的接口发送请求：跨域</li>
+</ul>
+</li>
+</ul>
+<h3 id="跨域方案-jsonp"><a href="#跨域方案-jsonp" class="headerlink" title="跨域方案-jsonp"></a>跨域方案-jsonp</h3><ul>
+<li><p>民间的解决方案</p>
+</li>
+<li><p>实验一方式：</p>
+<ul>
+<li><p>前端：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(&#123;</span><br><span class="line">    url:,</span><br><span class="line">    type:<span class="string">'get'</span>,<span class="comment">//必须是get</span></span><br><span class="line">    dataType:<span class="string">'jsonp'</span>,<span class="comment">//需要设置</span></span><br><span class="line">    success:<span class="function"><span class="keyword">function</span>(<span class="params">backData</span>)</span>&#123;&#125;,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>后端</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">response.jsonp(&#123;<span class="attr">key</span>:value,<span class="attr">key1</span>:value1&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express=<span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">const</span> app=express();</span><br><span class="line">app.get(<span class="string">'/list'</span>,(request,response)=&gt;&#123;</span><br><span class="line">    response.jsonp(&#123;</span><br><span class="line">        msg:<span class="string">'jsonp测试'</span>,</span><br><span class="line">        </span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)</span><br><span class="line">app.listen(<span class="number">3000</span>)</span><br></pre></td></tr></table></figure>
+
+<p><img src="C:%5CUsers%5C%E5%88%98%E6%99%93%E6%85%A7%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1572269989348.png" alt="1572269989348"></p>
+</li>
+<li><p>jsonp原理：</p>
+<ul>
+<li>script标签的src属性可以发送请求，同时没有同源限制</li>
+<li>和Ajax一点关系没有<ul>
+<li>到netWork中选中xhr分类，什么都看不到</li>
+</ul>
+</li>
+<li>本质是动态创建了一个script标签添加到页面的顶部<ul>
+<li>src设置的：接口地址+发送的数据+callback=xxx</li>
+</ul>
+</li>
+<li>请求成功之后会被自动移除</li>
+<li>服务器返回：函数的调用，函数名({对象})</li>
+<li>内容返回到浏览器会被解析为js,调用定义好的函数，传入参数jquery的jsonp</li>
+</ul>
+</li>
+<li><p>自己模拟的jsonp实现过程</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="actionscript">    <span class="function"><span class="keyword">function</span> <span class="title">doSomething</span><span class="params">(backData)</span></span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="built_in">console</span>.log(backData);</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"http://192.168.156.91:3000/jsonpApi?callback=doSomething"</span>&gt;</span></span><br><span class="line"><span class="actionscript">	<span class="comment">//函数的调用</span></span></span><br><span class="line">   </span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><p>缺点：</p>
+<ul>
+<li>不支持post请求</li>
+<li>数据大的话，搞不定，文件上传也搞不定</li>
+</ul>
+</li>
+<li><p>优点：</p>
+<ul>
+<li>兼容性超级好</li>
+</ul>
+</li>
+</ul>
+<h3 id="跨域方案-CORS"><a href="#跨域方案-CORS" class="headerlink" title="跨域方案-CORS"></a>跨域方案-CORS</h3><ul>
+<li><p>CORS：</p>
+<ul>
+<li>cross :跨</li>
+<li>origin:域</li>
+<li>resource:资源</li>
+<li>sharing:共享</li>
+</ul>
+</li>
+<li><p>html5中推出的新标准，低版本浏览器不支持ie</p>
+</li>
+<li><p>前端：什么事情也不用做</p>
+</li>
+<li><p>后端：设置允许跨域</p>
+<ul>
+<li>在响应数据之前设置允许header</li>
+<li><code>response.header(&#39;Access-Control-Allow-Origin&#39;,&#39;*&#39;)</code></li>
+</ul>
+</li>
+<li><p>CORS原理：</p>
+<ul>
+<li>浏览器能够识别(‘Access-Control-Allow-Origin’,’*’)这个header</li>
+<li>请求发给服务器之后</li>
+<li>服务器翻译的响应头中有一个允许标记</li>
+<li>浏览器人为服务器运行跨域访问，没有了跨域错误</li>
+</ul>
+</li>
+<li><p>缺点：</p>
+<ul>
+<li>兼容性较jsonp差</li>
+<li>微软已经放弃了xp,ie5,ie6基本没人使用</li>
+</ul>
+</li>
+<li><p>优点：</p>
+<ul>
+<li>get和post都支持</li>
+<li>前端什么也不用干</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express=<span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">const</span> app=express();</span><br><span class="line">app.post(<span class="string">'/add'</span>,(request,response)=&gt;&#123;</span><br><span class="line">    response.header(<span class="string">'Access-Control-Allow-Origin'</span>,<span class="string">'*'</span>);</span><br><span class="line">    response.send(<span class="string">'/add'</span>);</span><br><span class="line">&#125;)</span><br><span class="line">app.listen(<span class="number">3000</span>)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="中间件设置跨域"><a href="#中间件设置跨域" class="headerlink" title="中间件设置跨域"></a>中间件设置跨域</h3><ul>
+<li><p>请求和响应之间额外注册的一个回调函数</p>
+</li>
+<li><p>在这个回调函数中统一设置允许跨域的那个头</p>
+</li>
+<li><p>每次进行ajax请求接口，会先request,然后执行中间件的会调函数，最后执行response</p>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">app.use(<span class="function">(<span class="params">request,response,next</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="comment">//设置允许跨域</span></span><br><span class="line">    response.header(<span class="string">'Acccess-Control-Allow-Origin'</span>,<span class="string">'*'</span>);</span><br><span class="line">    <span class="comment">//调用next</span></span><br><span class="line">    next();</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+</li>
+</ul>
+<h3 id="补充vscode主题变色"><a href="#补充vscode主题变色" class="headerlink" title="-补充vscode主题变色"></a>-补充vscode主题变色</h3><ul>
+<li>下载扩展Dark-Material</li>
+</ul>
+<h3 id="nodemon-自动重新运行"><a href="#nodemon-自动重新运行" class="headerlink" title="nodemon-自动重新运行"></a>nodemon-自动重新运行</h3><ul>
+<li>node的一个全局模块</li>
+<li>当做一个没有图像化界面的软件</li>
+<li>安装之后可以自动检测文件修改，自动重新运行</li>
+<li>任意位置执行 <code>npm i nodemon -g</code></li>
+<li>安装完毕之后<ul>
+<li>node xxx 换成nodemon xxx</li>
+</ul>
+</li>
+</ul>
+<h2 id="ES6-基本概念"><a href="#ES6-基本概念" class="headerlink" title="ES6-基本概念"></a>ES6-基本概念</h2><ul>
+<li>2015年推出新的语法规范ECMAScript</li>
+</ul>
+<h3 id="ES6-let"><a href="#ES6-let" class="headerlink" title="ES6-let"></a>ES6-let</h3><ul>
+<li><p>变量声明</p>
+</li>
+<li><p>与var比较：</p>
+<ul>
+<li>没有变量提升</li>
+<li>有块级作用域</li>
+<li>不能重复声明（但是可以重新赋值）</li>
+<li>替代var</li>
+<li>别再写var 用let</li>
+</ul>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> 变量名=值</span><br><span class="line"></span><br><span class="line"><span class="comment">//基本使用</span></span><br><span class="line"><span class="keyword">let</span> name=<span class="string">'jack'</span>;</span><br><span class="line"><span class="built_in">console</span>.log(name);<span class="comment">//jack</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//重新赋值</span></span><br><span class="line">name=<span class="string">'rose'</span>;<span class="comment">//可以的</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//变量声明不能提升</span></span><br><span class="line"><span class="built_in">console</span>.log(name);<span class="comment">//报错</span></span><br><span class="line"><span class="keyword">let</span> name=<span class="string">'jack'</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//块级作用域</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">let</span> skill=<span class="string">'跳舞'</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(skill);<span class="comment">//报错</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//不能重新声明</span></span><br><span class="line"><span class="keyword">let</span> skill=<span class="string">'不如跳舞'</span>;</span><br><span class="line"><span class="keyword">let</span> skill=<span class="string">'跳什么'</span>;</span><br><span class="line"><span class="built_in">console</span>.log(skill);<span class="comment">//报错</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="ES6-const"><a href="#ES6-const" class="headerlink" title="ES6-const"></a>ES6-const</h3><ul>
+<li><p>常量声明</p>
+</li>
+<li><p>与var比较：</p>
+<ul>
+<li>没有变量提升</li>
+<li>有块级作用域</li>
+<li>不能重复声明（一般不能重复赋值）</li>
+<li>必须声明时赋值</li>
+<li>能用const 不用let 能用let不用var</li>
+<li>声明之后不能改</li>
+</ul>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//基本使用</span></span><br><span class="line"><span class="keyword">const</span> friend=<span class="string">'乌索普'</span>;</span><br><span class="line"><span class="built_in">console</span>.log(friend);<span class="comment">//乌索普</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//变量不能提升</span></span><br><span class="line"><span class="built_in">console</span>.log(friend);</span><br><span class="line"><span class="keyword">const</span> friend=<span class="string">'jack'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//有块级作用域</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">const</span> friend=<span class="string">'jack'</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(friend);<span class="comment">//报错</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//不能重复	声明</span></span><br><span class="line"><span class="keyword">const</span> vegetable=<span class="string">'西兰花'</span>;</span><br><span class="line"><span class="keyword">const</span> vegetable=<span class="string">'westblueflower'</span>;<span class="comment">//报错</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//不能修改</span></span><br><span class="line"><span class="keyword">const</span> vegetable=<span class="string">'西兰花'</span>;</span><br><span class="line">vegetable=<span class="string">'westblueflower'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//必须声明时赋值</span></span><br><span class="line"><span class="keyword">const</span> vegetable;<span class="comment">//报错</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="ES6-对象的属性和方法简化写法"><a href="#ES6-对象的属性和方法简化写法" class="headerlink" title="ES6-对象的属性和方法简化写法"></a>ES6-对象的属性和方法简化写法</h3><ul>
+<li><p>更简单的属性赋值：</p>
+</li>
+<li><p>前提：<code>属性名和值的名字相同</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> name=<span class="string">'jack'</span>;</span><br><span class="line"><span class="keyword">const</span> person=&#123;</span><br><span class="line">    <span class="comment">//属性名和值的名字相同</span></span><br><span class="line">    <span class="comment">//name:name 原来的写法</span></span><br><span class="line">    name,<span class="comment">//ES6写法</span></span><br><span class="line">    <span class="comment">//jump:function()&#123;</span></span><br><span class="line">        </span><br><span class="line">    <span class="comment">//&#125;</span></span><br><span class="line">    <span class="comment">//ES6写法</span></span><br><span class="line">    jump()&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="ES-6-模板字符串"><a href="#ES-6-模板字符串" class="headerlink" title="ES-6-模板字符串"></a>ES-6-模板字符串</h3><ul>
+<li><p>轻量级的模板引擎，原生支持，不用导包</p>
+</li>
+<li><p>定义的时候使用`</p>
+</li>
+<li><p>挖坑的语法${表达式}</p>
+</li>
+<li><p>坑中必须有东西</p>
+</li>
+<li><p>可以换行 简单模板生成直接使用 模板字符串即可</p>
+</li>
+<li><p>复杂的还是模板引擎</p>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> smoke=<span class="string">'黑烟'</span>;</span><br><span class="line"><span class="keyword">const</span> data=&#123;</span><br><span class="line">    name:<span class="string">'李白'</span>,</span><br><span class="line">    dynasty:<span class="string">'唐'</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">const</span> temStr=<span class="string">`</span></span><br><span class="line"><span class="string">	望庐山瀑布 <span class="subst">$&#123;data.name&#125;</span> 来自于&#123;data.dynasty&#125;</span></span><br><span class="line"><span class="string">日照香炉生<span class="subst">$&#123;smoke&#125;</span></span></span><br><span class="line"><span class="string">遥看瀑布挂前川</span></span><br><span class="line"><span class="string">`</span>;</span><br><span class="line"><span class="built_in">console</span>.log(temStr);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>与模板引擎区别是：对象调用省略对象(分情况，有时候嵌套的内部也是对象还是需要对象.属性名)</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    &#123;&#123;$value&#125;&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="知识点一"><a href="#知识点一" class="headerlink" title="知识点一"></a>知识点一</h3><ul>
+<li>输入node回车 按两次ctrl+c，退出</li>
+<li>对象的属性和方法获取语法：还是对象.属性或者对象.方法()</li>
+<li>模板字符串的使用</li>
+</ul>
+<h3 id="ES6-函数默认值"><a href="#ES6-函数默认值" class="headerlink" title="ES6-函数默认值"></a>ES6-函数默认值</h3><ul>
+<li><p>早期函数不传递参数，参数有一个默认值是undefined</p>
+</li>
+<li><p>早期通过短路运算，实现默认值的设置</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayHi</span>(<span class="params">name,skill</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    name=name||<span class="string">'路飞'</span>;</span><br><span class="line">    skill=skill||<span class="string">'橡胶果实'</span>;</span><br><span class="line">&#125;</span><br><span class="line">sayHi();</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><p>ES6中的默认值</p>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayHi</span>(<span class="params">name=<span class="string">'路飞'</span>,skill=<span class="string">'橡胶果实'</span></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(name,skill);</span><br><span class="line">&#125;</span><br><span class="line">sayHi();<span class="comment">//路飞 橡胶果实</span></span><br><span class="line">sayHi(<span class="string">'索隆'</span>,<span class="string">'迷路'</span>);<span class="comment">//索隆 迷路</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="ES6-对象解构"><a href="#ES6-对象解构" class="headerlink" title="ES6-对象解构"></a>ES6-对象解构</h3><ul>
+<li><p>更方便的对象属性取值</p>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> person=&#123;</span><br><span class="line">    name:<span class="string">'时间之灵'</span>,</span><br><span class="line">    desc:<span class="string">'美食'</span>,</span><br><span class="line">    spec:<span class="string">'食物好吃'</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//之前获取方式</span></span><br><span class="line"><span class="keyword">const</span> name=person.name;</span><br><span class="line"><span class="keyword">const</span> desc=person.desc;</span><br><span class="line"><span class="keyword">const</span> spec=person.spec;	</span><br><span class="line"></span><br><span class="line"><span class="comment">//ES6简写</span></span><br><span class="line"><span class="comment">//快速获取对象的属性</span></span><br><span class="line"><span class="comment">//需要和对象的属性名相同</span></span><br><span class="line"><span class="keyword">const</span> &#123;name,desc,spec&#125;=person;</span><br><span class="line"><span class="comment">//没有返回undefined</span></span><br><span class="line"><span class="keyword">const</span> &#123;skill&#125;=person;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+</li>
+</ul>
+<h3 id="ES6-对象解构实际应用"><a href="#ES6-对象解构实际应用" class="headerlink" title="ES6-对象解构实际应用"></a>ES6-对象解构实际应用</h3><h4 id="结合函数用"><a href="#结合函数用" class="headerlink" title="结合函数用"></a>结合函数用</h4><ul>
+<li><p>函数的参数进行结构</p>
+</li>
+<li><p>提示</p>
+</li>
+<li><p>实际调用时会更多的提示</p>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getFoods</span>(<span class="params">food1,food2,food3,food4</span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//ES6写法：</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getFoods</span>(<span class="params">&#123;food1,food2,food3,food4&#125;</span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">getFoods(&#123;</span><br><span class="line">    food1:<span class="string">'西兰花炒蛋'</span>,</span><br><span class="line">    food2:<span class="string">'西红柿炒蛋'</span>,</span><br><span class="line">    food3:<span class="string">'猪肉炒蛋'</span>,</span><br><span class="line">    food4:<span class="string">'蛋炒西兰花'</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h4 id="函数参数解构结合默认值"><a href="#函数参数解构结合默认值" class="headerlink" title="函数参数解构结合默认值"></a>函数参数解构结合默认值</h4><ul>
+<li><p>结合默认值</p>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getFoods</span>(<span class="params">&#123;food1=<span class="string">'西兰花炒蛋'</span>,food2=<span class="string">'蛋炒饭'</span>&#125;</span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">getFoods(&#123;&#125;);<span class="comment">//不传使用默认值</span></span><br><span class="line">getFoods(&#123;</span><br><span class="line">    food2:<span class="string">'黄瓜炒鸡蛋'</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="ES6-数组解构"><a href="#ES6-数组解构" class="headerlink" title="ES6-数组解构"></a>ES6-数组解构</h3><ul>
+<li><p>获取顺序和数组元素对应关系一致</p>
+</li>
+<li><p>数组大部分时候都是通过下标获取某一个</p>
+</li>
+<li><p>数组的结果用的不多，了解即可</p>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> cartoonArr=[<span class="string">'喜羊羊'</span>,<span class="string">'葫芦娃'</span>,<span class="string">'灰太狼'</span>,<span class="string">'天线宝宝'</span>];</span><br><span class="line"><span class="comment">//取值</span></span><br><span class="line"><span class="keyword">const</span> c1=cartoonArr[<span class="number">0</span>];</span><br><span class="line"><span class="keyword">const</span> c2=cartoonArr[<span class="number">1</span>];</span><br><span class="line"><span class="built_in">console</span>.log(c1,c2);</span><br><span class="line"></span><br><span class="line"><span class="comment">//ES6取值</span></span><br><span class="line"><span class="keyword">const</span> [c1,c2,c3,c4]=cartoonArr;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="ES6-对象展开"><a href="#ES6-对象展开" class="headerlink" title="ES6-对象展开"></a>ES6-对象展开</h3><ul>
+<li><p>结合对象使用</p>
+</li>
+<li><p><code>写在前面的同名的属性会被覆盖</code></p>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> person=&#123;</span><br><span class="line">    skill:<span class="string">'跳水'</span>,</span><br><span class="line">    hobby:<span class="string">'抗冻'</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">const</span> student=&#123;</span><br><span class="line">    skill:<span class="string">'学习'</span>,</span><br><span class="line">    hobby:<span class="string">'学习使我快乐'</span>,</span><br><span class="line">    sleep:<span class="string">'呼噜噜'</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">const</span> son=&#123;</span><br><span class="line">    <span class="comment">//写在前面的同名的属性会被覆盖</span></span><br><span class="line">    skill:<span class="string">'游泳'</span>,</span><br><span class="line">    ...person,</span><br><span class="line">&#125;;</span><br><span class="line"><span class="built_in">console</span>.log(son.skill);<span class="comment">//跳水</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="ES6-数组展开"><a href="#ES6-数组展开" class="headerlink" title="ES6-数组展开"></a>ES6-数组展开</h3><ul>
+<li><p>结合数组使用</p>
+</li>
+<li><p><code>一直在后面追加</code></p>
+</li>
+<li><p><code>数组不会出现覆盖问题，索引依次靠后</code></p>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> vegetable=[<span class="string">'西兰花'</span>,<span class="string">'西红柿'</span>,<span class="string">'苦瓜'</span>,<span class="string">'黄瓜'</span>];</span><br><span class="line"><span class="keyword">const</span> meats=[<span class="string">'牛肉'</span>,<span class="string">'羊肉'</span>,<span class="string">'冷鲜肉'</span>];</span><br><span class="line"><span class="keyword">const</span> foods=[...vegetable,...meats];</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="ES6-箭头函数"><a href="#ES6-箭头函数" class="headerlink" title="ES6-箭头函数"></a>ES6-箭头函数</h3><ul>
+<li><p>箭头函数书写步骤：</p>
+<ul>
+<li>省略function 变为=&gt;</li>
+<li>如果形参只有一个，可以省略小括号</li>
+<li>如果函数体只有一行，可以省略大括号</li>
+<li>如果函数体只有一行，并且有返回值<ul>
+<li>省略大括号的同时，必须省略return</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//函数 无参数 无返回值的函数</span></span><br><span class="line"><span class="keyword">const</span> func1=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'函数'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//ES6写法:</span></span><br><span class="line"><span class="keyword">const</span> func1=<span class="function"><span class="params">()</span>=&gt;</span><span class="built_in">console</span>.log(<span class="string">'函数'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//有一个参数 无返回值的函数</span></span><br><span class="line"><span class="keyword">const</span> func2=<span class="function"><span class="keyword">function</span>(<span class="params">name</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(name+<span class="string">'你好吗'</span>);</span><br><span class="line">&#125;</span><br><span class="line">func2(<span class="string">'刘晓慧'</span>);;</span><br><span class="line"><span class="comment">//ES6写法：</span></span><br><span class="line"><span class="keyword">const</span> func2=<span class="function"><span class="params">name</span>=&gt;</span><span class="built_in">console</span>.log(name+<span class="string">'你好吗'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//有一个参数 有一个返回值</span></span><br><span class="line"><span class="keyword">const</span> func3=<span class="function"><span class="keyword">function</span>(<span class="params">name</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> name+<span class="string">'奥哈有'</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//ES6写法：</span></span><br><span class="line"><span class="keyword">const</span> func3=<span class="function"><span class="params">name</span>=&gt;</span>name+<span class="string">'奥哈有'</span>;</span><br><span class="line"><span class="keyword">var</span> res=func3(<span class="string">'我是'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res);</span><br><span class="line"></span><br><span class="line"><span class="comment">//参数有多个 函数体有多行的函数</span></span><br><span class="line"><span class="keyword">const</span> func4=<span class="function"><span class="keyword">function</span>(<span class="params">name,age</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'孤独的天才'</span>);</span><br><span class="line">    <span class="built_in">console</span>.log(name+<span class="string">'是吗'</span>+age);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//ES6写法</span></span><br><span class="line"><span class="keyword">const</span> func4=<span class="function">(<span class="params">name,age</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'孤独的天才'</span>);</span><br><span class="line">    <span class="built_in">console</span>.log(name+<span class="string">'是吗'</span>+age);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="ES6-箭头函数中的this"><a href="#ES6-箭头函数中的this" class="headerlink" title="ES6-箭头函数中的this"></a>ES6-箭头函数中的this</h3><ul>
+<li><p>箭头函数中的this，在创建时就确定了，是上下文（和他平级的环境中）的this</p>
+</li>
+<li><p>可以通过babel的工具把高级的js代码翻译成低版本的js,查看内部的代码实现的细节</p>
+</li>
+<li><p>babel传送门（babeljs.cn）</p>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> person=&#123;</span><br><span class="line">    name:<span class="string">'海尔兄弟'</span>,</span><br><span class="line">    skill:<span class="string">'抗冻'</span>,</span><br><span class="line">    jump()&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>);<span class="comment">//调用者是谁this就是谁</span></span><br><span class="line">        <span class="keyword">const</span> _this=<span class="keyword">this</span>;</span><br><span class="line">        <span class="comment">//window.setTimeout(function()&#123;</span></span><br><span class="line">          <span class="comment">//  console.log(this);//window</span></span><br><span class="line">          <span class="comment">//  console.log(_this);//老方法 _this的jump方法当前调用者是谁_this就是谁</span></span><br><span class="line">       <span class="comment">// &#125;)</span></span><br><span class="line">        </span><br><span class="line">        <span class="built_in">window</span>.setTimeout(<span class="function"><span class="params">()</span>=&gt;</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>);<span class="comment">//是当前调用jump的调用者</span></span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">person.jump();</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h2 id="终端"><a href="#终端" class="headerlink" title="终端"></a>终端</h2><ul>
+<li>多个终端区别：<ul>
+<li>终端可以理解为是一个没有界面的软件</li>
+<li>通过输入内容让他干什么事</li>
+<li>cmd 微软 早期推出 功能最少 不太好用</li>
+<li>git bash here 安装git之后 自带 功能强大 支持很多cmd没有命令 linux的命令也基本上都支持</li>
+<li>power shell微软后续推出的一个终端，功能牛逼很多，但是还是比git bash here支持的命令少一些</li>
+</ul>
+</li>
+</ul>
+<h2 id="Mysql-数据库"><a href="#Mysql-数据库" class="headerlink" title="Mysql-数据库"></a>Mysql-数据库</h2><ul>
+<li>分类<ul>
+<li>关系型数据库<ul>
+<li>类似于table表格的形式保存数据</li>
+<li>使用sql的语句操纵数据</li>
+<li>常见的有mysql,oracle,mssql……</li>
+</ul>
+</li>
+<li>非关系型数据库<ul>
+<li>类似于js对象的形式保存数据</li>
+<li>操纵对象的形式操纵数据</li>
+<li>常见的有：Mongodb,Redis……</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>数据库管理员：DBA</li>
+<li>数据库服务器</li>
+</ul>
+<h3 id="数据库-基本使用"><a href="#数据库-基本使用" class="headerlink" title="数据库-基本使用"></a>数据库-基本使用</h3><ul>
+<li>建库</li>
+<li>建表</li>
+<li>建字段</li>
+</ul>
+<h3 id="sql语句-增"><a href="#sql语句-增" class="headerlink" title="sql语句-增"></a>sql语句-增</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> 表名(字段<span class="number">1</span>，字段<span class="number">2</span>……) <span class="keyword">values</span>(值<span class="number">1</span>，值<span class="number">2</span>，……)</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="sql语句-删"><a href="#sql语句-删" class="headerlink" title="sql语句-删"></a>sql语句-删</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> 表名 <span class="keyword">where</span> 条件</span><br><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> 表名 <span class="keyword">where</span> <span class="keyword">id</span>=<span class="number">3</span> 删除一条</span><br><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> 表名 <span class="keyword">where</span> <span class="keyword">id</span>&gt;<span class="number">3</span> 删除一定范围</span><br><span class="line"><span class="keyword">delete</span> <span class="keyword">from</span> 表名 <span class="keyword">where</span> 不跟条件全部删除</span><br><span class="line">必须给条件，否则全部删除</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="sql语句-改"><a href="#sql语句-改" class="headerlink" title="sql语句-改"></a>sql语句-改</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">update</span> 表名 <span class="keyword">set</span> 字段<span class="number">1</span>=值<span class="number">1</span>，字段<span class="number">2</span>=值<span class="number">2</span>…… <span class="keyword">where</span>条件</span><br><span class="line"><span class="keyword">update</span> 表名 <span class="keyword">set</span> username=<span class="string">'赵四'</span>,skill=<span class="string">'跳舞'</span> <span class="keyword">where</span> <span class="keyword">id</span>=<span class="number">2</span>;</span><br><span class="line"><span class="keyword">update</span> 表名 <span class="keyword">set</span> username=<span class="string">'赵四'</span>,skill=<span class="string">'跳跳舞'</span> <span class="keyword">where</span> <span class="keyword">id</span>&gt;<span class="number">3</span></span><br><span class="line"><span class="keyword">update</span> 表名 <span class="keyword">set</span> username=<span class="string">'赵四'</span>,skill=<span class="string">'跳舞'</span></span><br><span class="line">条件不给 全部更改</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="sql语句-查"><a href="#sql语句-查" class="headerlink" title="sql语句-查"></a>sql语句-查</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> 表名 <span class="keyword">where</span> 条件</span><br><span class="line">//精确查询</span><br><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> <span class="keyword">user</span> <span class="keyword">where</span> <span class="keyword">id</span>=<span class="number">2</span>;</span><br><span class="line">//范围查询</span><br><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> <span class="keyword">user</span> <span class="keyword">where</span> <span class="keyword">id</span>&gt;<span class="number">2</span></span><br><span class="line">//全部查询</span><br><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> <span class="keyword">user</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="mysql模块使用"><a href="#mysql模块使用" class="headerlink" title="mysql模块使用"></a>mysql模块使用</h3><ul>
+<li><p><code>http://www.npmjs.com/package/mysql</code></p>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//导包</span></span><br><span class="line"><span class="keyword">const</span> mysql=<span class="built_in">require</span>(<span class="string">'mysql'</span>);</span><br><span class="line"><span class="comment">//设置数据库的连接信息</span></span><br><span class="line"><span class="keyword">const</span> connection=mysql.createConnection(&#123;</span><br><span class="line">    <span class="comment">//地址</span></span><br><span class="line">    host:<span class="string">'localhost'</span>,</span><br><span class="line">    <span class="comment">//用户名</span></span><br><span class="line">    user:<span class="string">'root'</span>,</span><br><span class="line">    <span class="comment">//密码</span></span><br><span class="line">    password:<span class="string">'root'</span>,</span><br><span class="line">    <span class="comment">//库的名字</span></span><br><span class="line">    database:<span class="string">'db88'</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//链接数据库</span></span><br><span class="line">connection.connect();</span><br><span class="line"><span class="comment">//参数1：执行的sql语句</span></span><br><span class="line"><span class="comment">//参数2 执行完毕的回调函数</span></span><br><span class="line">connection.query(<span class="string">'select * from user'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">error,results,fields</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//错误信息 如果有的话</span></span><br><span class="line">    <span class="comment">//执行的结果</span></span><br><span class="line">    <span class="comment">//表示的字段信息 用的不多</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//关闭数据库连接</span></span><br><span class="line">connection.end();</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+</li>
+</ul>
+<h3 id="mysql-ithm模块使用"><a href="#mysql-ithm模块使用" class="headerlink" title="mysql-ithm模块使用"></a>mysql-ithm模块使用</h3><ul>
+<li><p><code>http://www.npmjs.com/package/mysql-ithm</code></p>
+</li>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//导入模块</span></span><br><span class="line"><span class="keyword">const</span> mysql=<span class="built_in">require</span>(<span class="string">'mysql'</span>);</span><br><span class="line"><span class="keyword">const</span> hm=<span class="built_in">require</span>(<span class="string">'mysql-ithm'</span>);</span><br><span class="line"><span class="comment">//连接数据库</span></span><br><span class="line"><span class="comment">//如果数据库存在则连接，不存在则自动创建数据库</span></span><br><span class="line">hm.connect(&#123;</span><br><span class="line">    host:<span class="string">'localhost'</span>,</span><br><span class="line">    port:<span class="string">'3306'</span>,</span><br><span class="line">    user:<span class="string">'root'</span>,</span><br><span class="line">    password:<span class="string">'root'</span>,</span><br><span class="line">    database:<span class="string">'hm'</span>,</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//创建Model(表格模型，负责增删改查)</span></span><br><span class="line"><span class="comment">//表格名字叫student</span></span><br><span class="line"><span class="keyword">let</span> studentModel = hm.model(<span class="string">'student'</span>,&#123;</span><br><span class="line">    <span class="comment">// 字段</span></span><br><span class="line">    name:<span class="built_in">String</span>,</span><br><span class="line">    age:<span class="built_in">Number</span>,</span><br><span class="line">    <span class="comment">// 技能</span></span><br><span class="line">    skill:<span class="built_in">String</span>,</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//4.调用API 添加数据</span></span><br><span class="line">studentModel.insert(&#123;<span class="attr">name</span>:<span class="string">'面向对象'</span>，age:<span class="number">18</span>,<span class="attr">skill</span>:<span class="string">'创建对象'</span>&#125;,(err,results)=&gt;&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(err);<span class="comment">//错误信息</span></span><br><span class="line">    <span class="built_in">console</span>.log(results)<span class="comment">//结果</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//数据查询</span></span><br><span class="line">studentModel.find(<span class="function">(<span class="params">err,results</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(results);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//数据修改</span></span><br><span class="line">studentModel.update(&#123;<span class="attr">name</span>:<span class="string">'李四'</span>&#125;,(err,results)=&gt;&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(results);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//数据删除</span></span><br><span class="line">studentModel.delete(<span class="function">(<span class="params">err,results</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(results);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>小知识：截图神器：传送门 <a href="http://www.snipaste.com" target="_blank" rel="noopener">http://www.snipaste.com</a></p>
+<ul>
+<li>取色：F1截取 按c取色 按shift切换颜色格式</li>
+<li>改粗细 滚轮 1,2</li>
+<li>还原截图：f3</li>
+<li>订图：开始普及</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<h2 id="chrome允许跨域"><a href="#chrome允许跨域" class="headerlink" title="chrome允许跨域"></a>chrome允许跨域</h2><p>详情请参考网址：<a href="https://www.cnblogs.com/laden666666/p/5544572.html" target="_blank" rel="noopener">https://www.cnblogs.com/laden666666/p/5544572.html</a></p>
+<h2 id="英雄管理项目"><a href="#英雄管理项目" class="headerlink" title="英雄管理项目"></a>英雄管理项目</h2><h3 id="项目说明"><a href="#项目说明" class="headerlink" title="项目说明"></a>项目说明</h3><ul>
+<li>开发方式：<ul>
+<li>后端：<ul>
+<li>照着接口文档</li>
+<li>写接口，接收数据，接收文件，增删改查数据库，翻译结果</li>
+</ul>
+</li>
+<li>前端：<ul>
+<li>写静态</li>
+<li>照着接口文档</li>
+<li>调接口</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="接口文档"><a href="#接口文档" class="headerlink" title="接口文档"></a>接口文档</h3><ul>
+<li>基地址：<a href="http://127.0.0.1:3000" target="_blank" rel="noopener">http://127.0.0.1:3000</a></li>
+<li>状态码：<ul>
+<li>200 请求成功</li>
+<li>401 用户名已存在或用户名错误</li>
+<li>402 密码错误或验证码错误</li>
+<li>500 服务器内部错误</li>
+<li>302 服务器重定向</li>
+</ul>
+</li>
+</ul>
+<h3 id="项目初始化"><a href="#项目初始化" class="headerlink" title="项目初始化"></a>项目初始化</h3><p>步骤:</p>
+<blockquote>
+<p>1.新建文件夹：heroManage</p>
+<p>2.在文件夹中打开终端 <code>npm init -y</code></p>
+<p>3.创建index.js</p>
+<p>4.下包 <code>npm i express</code>  <code>npm i mysql-ithm mysql</code></p>
+<p>5.c+v express的基本结构</p>
+<p>6.c+v 今天要写的路由</p>
+<p>7.为了后续观察数据，此处英雄列表采用随机数据生成，后面一一介绍</p>
+<p>8.创建两个表，分别是hero和user两张表</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>)</span><br><span class="line"><span class="keyword">const</span> app = express()</span><br><span class="line"><span class="comment">//1.导入模块</span></span><br><span class="line"><span class="keyword">const</span> mysql = <span class="built_in">require</span>(<span class="string">'mysql'</span>);</span><br><span class="line"><span class="keyword">const</span> hm = <span class="built_in">require</span>(<span class="string">'mysql-ithm'</span>);</span><br><span class="line"><span class="keyword">const</span> Mock = <span class="built_in">require</span>(<span class="string">'mockjs'</span>)</span><br><span class="line"><span class="keyword">const</span> bodyParser = <span class="built_in">require</span>(<span class="string">'body-parser'</span>)</span><br><span class="line"><span class="keyword">const</span> fileUpload = <span class="built_in">require</span>(<span class="string">'express-fileupload'</span>);</span><br><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>);</span><br><span class="line"><span class="keyword">const</span> svgCaptcha = <span class="built_in">require</span>(<span class="string">'svg-captcha'</span>);</span><br><span class="line"><span class="keyword">var</span> session = <span class="built_in">require</span>(<span class="string">'express-session'</span>)</span><br><span class="line"></span><br><span class="line">app.use(express.static(<span class="string">'./web'</span>));</span><br><span class="line">app.use(express.static(<span class="string">'./uploads'</span>));</span><br><span class="line">app.use(bodyParser.urlencoded(&#123; <span class="attr">extended</span>: <span class="literal">false</span> &#125;));</span><br><span class="line">app.use(fileUpload());</span><br><span class="line">app.use(session(&#123;</span><br><span class="line">    secret: <span class="string">'keyboard cat'</span>,</span><br><span class="line">    resave: <span class="literal">false</span>,</span><br><span class="line">    saveUninitialized: <span class="literal">true</span>,</span><br><span class="line">  &#125;))</span><br><span class="line">app.use(<span class="string">'/hero/*'</span>,(req,res,next)=&gt;&#123;</span><br><span class="line">    <span class="keyword">if</span>(!req.session.userInfo)</span><br><span class="line">    &#123;</span><br><span class="line">        res.send(&#123;</span><br><span class="line">            code:<span class="number">500</span>,</span><br><span class="line">            msg:<span class="string">'没有凭证'</span></span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        next();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//2.连接数据库</span></span><br><span class="line"><span class="comment">//如果数据库存在则连接，不存在则会自动创建数据库</span></span><br><span class="line">hm.connect(&#123;</span><br><span class="line">    host: <span class="string">'localhost'</span>,<span class="comment">//数据库地址</span></span><br><span class="line">    port: <span class="string">'3306'</span>,</span><br><span class="line">    user: <span class="string">'root'</span>,<span class="comment">//用户名，没有可不填</span></span><br><span class="line">    password: <span class="string">'root'</span>,<span class="comment">//密码，没有可不填</span></span><br><span class="line">    database: <span class="string">'herolast'</span><span class="comment">//数据库名称</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//3.创建Model(表格模型：负责增删改查)</span></span><br><span class="line"><span class="comment">//如果table表格存在则连接，不存在则自动创建</span></span><br><span class="line"><span class="keyword">let</span> heroModel = hm.model(<span class="string">'hero'</span>, &#123;</span><br><span class="line">    name: <span class="built_in">String</span>,</span><br><span class="line">    skill: <span class="built_in">String</span>,</span><br><span class="line">    icon: <span class="built_in">String</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="keyword">let</span> userModel = hm.model(<span class="string">'user'</span>, &#123;</span><br><span class="line">    username: <span class="built_in">String</span>,</span><br><span class="line">    password: <span class="built_in">String</span>,</span><br><span class="line">&#125;);</span><br><span class="line"><span class="keyword">let</span> captchaText=<span class="string">''</span>;</span><br><span class="line">app.get(<span class="string">'/user/captcha'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> captcha = svgCaptcha.create();</span><br><span class="line">    <span class="comment">// req.session.captcha = captcha.text;</span></span><br><span class="line">    captchaText=captcha.text;</span><br><span class="line">    <span class="built_in">console</span>.log(captchaText);</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    res.type(<span class="string">'svg'</span>);</span><br><span class="line">    res.status(<span class="number">200</span>).send(captcha.data);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">app.listen(<span class="number">3000</span>, err =&gt; &#123;</span><br><span class="line">    <span class="keyword">if</span> (!err) &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'success'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="英雄列表"><a href="#英雄列表" class="headerlink" title="英雄列表"></a>英雄列表</h3><table>
+<thead>
+<tr>
+<th align="left">接口名称</th>
+<th align="center">接口类型</th>
+<th>接口参数</th>
+<th>返回数据</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">/hero/list</td>
+<td align="center">get</td>
+<td>无</td>
+<td>{hero:[英雄列表]}</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>查询所有数据 heroModel.find()，查询完毕之后返回的是数组</p>
+</li>
+<li><p>通过判断查询过来的数据，进行渲染到页面上</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">app.get(<span class="string">'/hero/list'</span>, (req, res) =&gt; &#123;</span><br><span class="line"></span><br><span class="line">    heroModel.find(<span class="function">(<span class="params">err, results</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// console.log(results);</span></span><br><span class="line">        <span class="keyword">if</span> (!err) &#123;</span><br><span class="line">            <span class="keyword">if</span> (results.length == <span class="number">0</span>) &#123;</span><br><span class="line">                res.send(&#123;</span><br><span class="line">                    msg: <span class="string">'目前没有什么消息，等待更新'</span>,</span><br><span class="line">                &#125;)</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                res.send(&#123;</span><br><span class="line">                    code: <span class="number">200</span>,</span><br><span class="line">                    hero: results,</span><br><span class="line">                &#125;)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            res.send(&#123;</span><br><span class="line">                code: <span class="number">500</span>,</span><br><span class="line">                msg: <span class="string">'服务器内部错误'</span>,</span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// res.send('/hero/lis');</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h3 id="查询英雄详情"><a href="#查询英雄详情" class="headerlink" title="查询英雄详情"></a>查询英雄详情</h3><ul>
+<li>点击详情按钮进行显示获取该英雄的详细信息</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="left">接口名称</th>
+<th align="center">接口类型</th>
+<th>接口参数</th>
+<th>返回数据</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">/hero/info</td>
+<td align="center"></td>
+<td>无</td>
+<td>{hero:[英雄列表]}</td>
+</tr>
+</tbody></table>
+<ul>
+<li>通过点击编辑按钮，进行跳转到编辑页面，为了获取指定英雄的详细信息，进行设置<code>url传递参数?id=id值</code></li>
+<li>接口中获取get传递的参数，通过<code>req.query.id</code>进行获取传递的参数</li>
+<li>前端：进入编辑页面，因为后面的编辑接口还需要传递当前修改的英雄信息的id,所以还需要把id存在一个隐藏域里，作为参数进行上传，以免报错</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 指定英雄详情</span></span><br><span class="line">app.get(<span class="string">'/hero/info'</span>, (req, res) =&gt; &#123;</span><br><span class="line">    <span class="keyword">const</span> id = req.query.id;</span><br><span class="line">    <span class="built_in">console</span>.log(id);</span><br><span class="line">    heroModel.find(<span class="string">`id=<span class="subst">$&#123;id&#125;</span>`</span>, (err, results) =&gt; &#123;</span><br><span class="line">        <span class="keyword">if</span> (!err) &#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (results.length != <span class="number">0</span>) &#123;</span><br><span class="line">                res.send(&#123;</span><br><span class="line">                    code: <span class="number">200</span>,</span><br><span class="line">                    data: results[<span class="number">0</span>],</span><br><span class="line">                &#125;)</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                res.send(&#123;</span><br><span class="line">                    msg: <span class="string">'你这输入的是啥，完全不懂！'</span></span><br><span class="line">                &#125;)</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            res.send(&#123;</span><br><span class="line">                code: <span class="number">500</span>,</span><br><span class="line">                msg: <span class="string">'不是我的错'</span></span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="新增英雄"><a href="#新增英雄" class="headerlink" title="新增英雄"></a>新增英雄</h3><p>步骤：</p>
+<blockquote>
+<p>1.因为涉及到数据主动提交及文件的上传，需要进行下包</p>
+<p>2.终端输入<code>npm i body-parser express-fileupload</code></p>
+<p>3.对应代码进行c+v</p>
+<p>4.因为涉及到文件的上传，所以需要定义一个文件夹用来存储你上传的文件<code>uploads</code></p>
+<p>5.数据库更新heroModel.insert()</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">接口名称</th>
+<th align="center">接口类型</th>
+<th>接口参数</th>
+<th>返回数据</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">/hero/add</td>
+<td align="center">post</td>
+<td>formdata</td>
+<td>{code:200,msg:’新增成功’}</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>post获取数据</p>
+<ul>
+<li>文本通过req.body.username</li>
+<li>文件通过req.files.icon.name</li>
+</ul>
+</li>
+<li><p>前端：注意调用接口的时候，设置<code>processData:false,contentType:false</code></p>
+</li>
+<li><p>前端：注意上传的表单的name属性和接口接收的参数的名称一致，以免造成错误</p>
+</li>
+<li><p>文件上传成功后进行移动<code>req.files.icon.mv(path.join(__dirname,icon),(err))</code></p>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 新增英雄</span></span><br><span class="line">app.post(<span class="string">'/hero/add'</span>, (req, res) =&gt; &#123;</span><br><span class="line">    <span class="keyword">const</span> name = req.body.name;</span><br><span class="line">    <span class="keyword">const</span> skill = req.body.skill;</span><br><span class="line">    <span class="built_in">console</span>.log(req.files);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">const</span> icon = req.files.icon.name;</span><br><span class="line">    <span class="built_in">console</span>.log(icon);</span><br><span class="line"></span><br><span class="line">    req.files.icon.mv(path.join(__dirname, <span class="string">'./uploads'</span>, icon), err =&gt; &#123;</span><br><span class="line">        <span class="keyword">if</span> (!err) &#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">'上传成功！'</span>);</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">    heroModel.insert(&#123; name, skill, icon &#125;, (err, results) =&gt; &#123;</span><br><span class="line">        <span class="keyword">if</span> (!err) &#123;</span><br><span class="line">            res.send(&#123;</span><br><span class="line">                code: <span class="number">200</span>,</span><br><span class="line">                msg: <span class="string">'新增成功！'</span></span><br><span class="line">            &#125;)</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            res.send(&#123;</span><br><span class="line">                code: <span class="number">500</span>,</span><br><span class="line">                msg: <span class="string">'不是我的错'</span></span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="英雄删除"><a href="#英雄删除" class="headerlink" title="英雄删除"></a>英雄删除</h3><table>
+<thead>
+<tr>
+<th align="left">接口名称</th>
+<th align="center">接口类型</th>
+<th>接口参数</th>
+<th>返回数据</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">/hero/delete</td>
+<td align="center">post</td>
+<td>id</td>
+<td>{code:200,msg:’删除成功’}</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>传递的参数id,在一开始渲染英雄列表的时候，作为自定义属性放在td父元素身上</p>
+</li>
+<li><p>前端：点击删除按钮，采用事件委托注册点击事件</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 删除英雄</span></span><br><span class="line">app.post(<span class="string">'/hero/delete'</span>, (req, res) =&gt; &#123;</span><br><span class="line">    <span class="keyword">const</span> id = req.body.id;</span><br><span class="line">    heroModel.delete(<span class="string">`id=<span class="subst">$&#123;id&#125;</span>`</span>, (err, results) =&gt; &#123;</span><br><span class="line">        <span class="keyword">if</span> (!err) &#123;</span><br><span class="line">            res.send(&#123;</span><br><span class="line">                code: <span class="number">200</span>,</span><br><span class="line">                msg: <span class="string">'这就删了'</span></span><br><span class="line">            &#125;)</span><br><span class="line"></span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            res.send(&#123;</span><br><span class="line">                code: <span class="number">500</span>,</span><br><span class="line">                msg: <span class="string">'不是我的错'</span></span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="编辑英雄"><a href="#编辑英雄" class="headerlink" title="编辑英雄"></a>编辑英雄</h3><table>
+<thead>
+<tr>
+<th align="left">接口名称</th>
+<th align="center">接口类型</th>
+<th>接口参数</th>
+<th>返回数据</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">/hero/update</td>
+<td align="center">post</td>
+<td>formdata</td>
+<td>{code:200,msg:’编辑成功’}</td>
+</tr>
+</tbody></table>
+<ul>
+<li>此处和添加差不多</li>
+<li>更新数据库heroModel.update(<code>id=${id}</code>,{name……},(err,results))</li>
+<li>前端：注意调用接口时设置<code>contentType:false,processData:false</code></li>
+<li>前端：注意上传的表单的name属性和接口接收的参数名称保持一致，以免产生错误</li>
+<li>前端：点击编辑按钮，采用事件委托进行注册</li>
+<li>在接口中自己添加了，当用户不更改文件的时候，仍然为一开始的文件，在内部做了一个判断，进行实现逻辑<ul>
+<li>因为用户不更改文件，也就意味着<code>document.querySelector(&#39;fileInput&#39;).files[0]</code>不存在，所以当点击上传的时候，后端接收req.files.icon.name也就不存在，所以就会导致服务器内部出错，所以做出了处理</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 编辑英雄</span></span><br><span class="line">app.post(<span class="string">'/hero/update'</span>, (req, res) =&gt; &#123;</span><br><span class="line">    <span class="comment">// 直接图片上传，如果不改则会报错 因为默认打开编辑页面 文件域是没有东西的</span></span><br><span class="line">    <span class="comment">// 设置不改有默认值 </span></span><br><span class="line">    <span class="comment">// 只要修改就没问题</span></span><br><span class="line">    <span class="keyword">const</span> name = req.body.name;</span><br><span class="line">    <span class="keyword">const</span> skill = req.body.skill;</span><br><span class="line">    <span class="keyword">const</span> id = req.body.id;</span><br><span class="line">    <span class="keyword">if</span> (req.files) &#123;</span><br><span class="line">        <span class="keyword">const</span> icon = req.files.icon.name;</span><br><span class="line">        req.files.icon.mv(path.join(__dirname, <span class="string">'./uploads'</span>, icon), err =&gt; &#123;</span><br><span class="line">            <span class="keyword">if</span> (!err) &#123;</span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">'上传成功！'</span>);</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">        <span class="comment">// icon='http://localhost:3000/'+icon;</span></span><br><span class="line">        heroModel.update(<span class="string">`id=<span class="subst">$&#123;id&#125;</span>`</span>, &#123; name, skill, icon &#125;, (err, results) =&gt; &#123;</span><br><span class="line">            <span class="keyword">if</span> (!err) &#123;</span><br><span class="line">                res.send(&#123;</span><br><span class="line">                    code: <span class="number">200</span>,</span><br><span class="line">                    msg: <span class="string">'说改就改'</span></span><br><span class="line">                &#125;)</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                res.send(&#123;</span><br><span class="line">                    code: <span class="number">500</span>,</span><br><span class="line">                    msg: <span class="string">'不是我的错'</span></span><br><span class="line">                &#125;)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line"></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="comment">// icon='http://localhost:3000/'+icon;</span></span><br><span class="line">        heroModel.update(<span class="string">`id=<span class="subst">$&#123;id&#125;</span>`</span>, &#123; name, skill &#125;, (err, results) =&gt; &#123;</span><br><span class="line">            <span class="keyword">if</span> (!err) &#123;</span><br><span class="line">                res.send(&#123;</span><br><span class="line">                    code: <span class="number">200</span>,</span><br><span class="line">                    msg: <span class="string">'说改就改'</span></span><br><span class="line">                &#125;)</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                res.send(&#123;</span><br><span class="line">                    code: <span class="number">500</span>,</span><br><span class="line">                    msg: <span class="string">'不是我的错'</span></span><br><span class="line">                &#125;)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="用户注册"><a href="#用户注册" class="headerlink" title="用户注册"></a>用户注册</h3><table>
+<thead>
+<tr>
+<th align="left">接口名称</th>
+<th align="center">接口类型</th>
+<th>接口参数</th>
+<th>返回数据</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">/user/register</td>
+<td align="center">post</td>
+<td>{username,password}</td>
+<td>{code:200,msg:’注册成功’}</td>
+</tr>
+</tbody></table>
+<ul>
+<li>注册时候需要考虑：<ul>
+<li>是否已被注册</li>
+<li>没有被注册就存储到数据库</li>
+<li>通过提交的username作为条件，进入数据库查找，如果results的长度不为0，说明之前注册过</li>
+</ul>
+</li>
+<li>前端：判断非空，两次输入的密码不一致，密码上传之前，可以采用加密方式进行上传<code>password=md5(password,&#39;lxh&#39;)</code>，后面具体讲</li>
+<li>后端：要进行非空判断，以免高级用户采用非法手段进行破坏</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 用户注册</span></span><br><span class="line">app.post(<span class="string">'/user/register'</span>, (req, res) =&gt; &#123;</span><br><span class="line">    <span class="comment">// res.send('/user'); </span></span><br><span class="line">    <span class="keyword">const</span> username = req.body.username;</span><br><span class="line">    <span class="keyword">const</span> password = req.body.password;</span><br><span class="line">    <span class="keyword">if</span> (username == <span class="string">''</span> || password == <span class="string">''</span>) &#123;</span><br><span class="line">        res.send(&#123;</span><br><span class="line">            msg: <span class="string">'干啥呢你！'</span>,</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    userModel.find(<span class="string">`username="<span class="subst">$&#123;username&#125;</span>"`</span>, (err, results) =&gt; &#123;</span><br><span class="line">        <span class="comment">// console.log(results);</span></span><br><span class="line">        <span class="keyword">if</span> (!err) &#123;</span><br><span class="line">            <span class="keyword">if</span> (results.length != <span class="number">0</span>) &#123;</span><br><span class="line">                res.send(&#123;</span><br><span class="line">                    code: <span class="number">401</span>,</span><br><span class="line">                    msg: <span class="string">'该用户名，已经被注册过了，重新注册吧！'</span></span><br><span class="line"></span><br><span class="line">                &#125;)</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">               userModel.insert(&#123;username,password&#125;,(err,results)=&gt;&#123;</span><br><span class="line">                   <span class="keyword">if</span>(!err)</span><br><span class="line">                   &#123;</span><br><span class="line">                    res.send(&#123;</span><br><span class="line">                        code:<span class="number">200</span>,</span><br><span class="line">                        msg:<span class="string">'恭喜你，注册成功！'</span></span><br><span class="line">                    &#125;)</span><br><span class="line">                   &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                       res.send(&#123;</span><br><span class="line">                           code:<span class="number">500</span>,</span><br><span class="line">                           msg:<span class="string">'不是我的问题'</span></span><br><span class="line">                       &#125;)</span><br><span class="line">                   &#125;</span><br><span class="line">               &#125;)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            res.send(&#123;</span><br><span class="line">                code: <span class="number">500</span>,</span><br><span class="line">                msg: <span class="string">'不是我的错'</span></span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;)</span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="用户登录"><a href="#用户登录" class="headerlink" title="用户登录"></a>用户登录</h3><table>
+<thead>
+<tr>
+<th align="left">接口名称</th>
+<th align="center">接口类型</th>
+<th>接口参数</th>
+<th>返回数据</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">/user/login</td>
+<td align="center">post</td>
+<td>{username,password,captcha}</td>
+<td>{code:200,msg:’登录成功’}</td>
+</tr>
+</tbody></table>
+<ul>
+<li>此处涉及到随机验证码的使用，后面详细介绍</li>
+<li>验证码可以允许忽略大小写，采用str.toUpperCase()|str.toLowerCase()</li>
+<li>前端：非空判断，上传密码参数之前也是通过加密转换<code>password=md5(password,&#39;lxh&#39;)</code></li>
+<li>后端：非空判断，验证码输入是否正确，通过查询条件为username,password,进行查询条件，如果results的长度不为0，说明输入密码和用户名都正确，可以登录</li>
+<li>当登陆成功，设置会话机制<code>req.session.userInfo=results[0]</code>，进行记录用户登录成功，并设置中间件，判断在进行调用<code>/hero/*</code>相关接口时，是否存在此会话机制，然后允许接下来操作</li>
+<li>前端：验证码是设置的img的src属性进行调用接口</li>
+<li>前端：实现点击图片切换验证码，会存在缓存问题，解决：设置不同的请求地址<code>/user/captcha?id=${Date.now()}</code></li>
+</ul>
+<h3 id="退出登录"><a href="#退出登录" class="headerlink" title="退出登录"></a>退出登录</h3><table>
+<thead>
+<tr>
+<th align="left">接口名称</th>
+<th align="center">接口类型</th>
+<th>接口参数</th>
+<th>返回数据</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">/user/logout</td>
+<td align="center">get</td>
+<td>无</td>
+<td>{code:200,msg:’退出成功’}</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>点击退出，删除用户的登录状态</p>
+</li>
+<li><p>前端不用干任何事情</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="comment">//  用户退出</span></span><br><span class="line">app.get(<span class="string">'/user/logout'</span>,(req,res)=&gt;&#123;</span><br><span class="line">    req.session.userInfo=<span class="literal">undefined</span>;</span><br><span class="line">    res.send(&#123;</span><br><span class="line">        code:<span class="number">200</span>,</span><br><span class="line">        msg:<span class="string">'退出成功！'</span></span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>面试可能会问到的问题：</p>
+<ul>
+<li>localStorage和sessionStorage的区别：<ul>
+<li>前者关闭浏览器还在</li>
+<li>后者关闭浏览器消失</li>
+<li>只能存字符串，如果要存复杂类型可以结合json.stringify</li>
+</ul>
+</li>
+<li>localStorage和sessionStorage和cookie和session的区别：<ul>
+<li>cookie保存位置是浏览 自动保存 自动携带 容量小4kb</li>
+<li>session保存的位置是服务器 浏览器用cookie存了一个 标记 钥匙</li>
+<li>服务器根据cookie携带而来的标记获取详细信息</li>
+<li>session消耗服务器的性能我之前的项目用的是token</li>
+<li>我和你说说token吧</li>
+<li>.……</li>
+<li>axios中可以用拦截器统一设置token</li>
+<li>在vue中用导航守卫统一判断是否有token</li>
+<li>我们聊一聊vue吧</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="整合静态资源服务器"><a href="#整合静态资源服务器" class="headerlink" title="整合静态资源服务器"></a>整合静态资源服务器</h3><ul>
+<li>添加代码<code>app.use(express.static(&#39;./web&#39;))</code>,其中web文件存放的是所有前端静态资源，为了列表渲染的时候，可以看到之前的随机生成的网页的图片，需要设置代码<code>appp.use(express.static(&#39;./uploads&#39;))</code></li>
+<li>调用接口的时候，无需输入完整的接口地址，eg:<code>/hero/list</code>即可调用接口成功</li>
+</ul>
+<h3 id="Mockjs-模拟数据生成"><a href="#Mockjs-模拟数据生成" class="headerlink" title="Mockjs-模拟数据生成"></a>Mockjs-模拟数据生成</h3><p>1.Mockjs的js库，可以生成随机的测试数据</p>
+<p>2.网址：<code>http://mockjs.com</code></p>
+<p>3.输入<code>npm install mockjs</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> Mock = <span class="built_in">require</span>(<span class="string">'mockjs'</span>)</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;<span class="number">1000</span>;i++)&#123;</span><br><span class="line">    <span class="keyword">const</span> name=Mock.Random.cname;</span><br><span class="line">    <span class="keyword">const</span> skill=Mock.Random.cparagraph(<span class="number">3</span>,<span class="number">10</span>);</span><br><span class="line">    <span class="keyword">const</span> icon=Mock.Random.image(<span class="string">'200x200'</span>,Mock.Random.color(),name);</span><br><span class="line">    heroModel.insert(&#123;name,skill,icon&#125;,(err,results)=&gt;&#123;&#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="验证码"><a href="#验证码" class="headerlink" title="验证码"></a>验证码</h3><p>1.网址：<code>http://npmjs.com/package/svg-captcha</code></p>
+<p>2.下包：<code>npm i svg-captcha</code></p>
+<p>3.导包</p>
+<p>4.用包</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> svgCaptcha = <span class="built_in">require</span>(<span class="string">'svg-captcha'</span>);</span><br><span class="line"> <span class="comment">//必须是get请求</span></span><br><span class="line">app.get(<span class="string">'/captcha'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> captcha = svgCaptcha.create();</span><br><span class="line">    req.session.captcha = captcha.text;</span><br><span class="line">    </span><br><span class="line">    res.type(<span class="string">'svg'</span>);</span><br><span class="line">    res.status(<span class="number">200</span>).send(captcha.data);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+
+
+<p>后端：将验证码captcha.text通过全局变量captchaText保存起来方便后续使用</p>
+<h3 id="密码加密"><a href="#密码加密" class="headerlink" title="密码加密"></a>密码加密</h3><ul>
+<li>通过某些算法，把某个值计算出一个新的结果</li>
+<li>这个新的结果，无算反算回去</li>
+<li>对称加密，非对称加密ASE……</li>
+<li>md5:最初设计摘要算法，从一个数据中算出一些特征值，计算结果无法反算</li>
+<li>网址：<code>http://www.github.com/blueimp/javaScript-MD5</code></li>
+<li>md5加密可以解出来，所以额外增加一个值，加盐<code>md5(加密的值,盐（额外的值）)</code></li>
+<li>黑客网址：<code>https://www.sec-wiki.com/skill/2</code></li>
+</ul>
+<h3 id="会话技术"><a href="#会话技术" class="headerlink" title="会话技术"></a>会话技术</h3><h4 id="cookie-甜饼，曲奇"><a href="#cookie-甜饼，曲奇" class="headerlink" title="cookie(甜饼，曲奇)"></a>cookie(甜饼，曲奇)</h4><ul>
+<li><p>http是无状态的</p>
+</li>
+<li><p>cookie的作用：解决http不会记录客户端（用户信息）这个缺点</p>
+</li>
+<li><p>注意：</p>
+</li>
+<li><blockquote>
+<p>1.cookie是由服务器设置Set-Cookie</p>
+<p>2.浏览器保存</p>
+<p>3.浏览器会偷偷的携带到服务器Cookie</p>
+<p>4.容量4kb大数据存不了</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="session"><a href="#session" class="headerlink" title="session"></a>session</h4><blockquote>
+<p>1.session保存的位置是服务器</p>
+<p>2.格式是：key:value</p>
+<p>3.浏览器中保存了一个cookie(标记，钥匙)</p>
+<p>4.浏览器再次请求服务器时，会携带标记去服务器，服务器就可以根据标记获取对应的详细信息</p>
+<p>5.session理论上来说，可以存很多东西</p>
+</blockquote>
+<h4 id="token"><a href="#token" class="headerlink" title="token"></a>token</h4><ul>
+<li>cookie和session会占用服务器内存，性能消耗</li>
+<li>cookie和session必须依赖于浏览器</li>
+<li>应用程序也需要保存状态，但是不支持cookie session</li>
+<li>token是由服务器生成，基于某种加密算法生成</li>
+<li>在计算时会用到用户的一些信息，不同的用户算出来的值不同</li>
+<li>计算完毕之后，服务器直接返回给浏览器，什么也不存</li>
+<li>好处：<ul>
+<li>网站可以用</li>
+<li>app可以用</li>
+<li>服务器不需要存东西</li>
+</ul>
+</li>
+</ul>
+<h3 id="登录状态维持-session的使用"><a href="#登录状态维持-session的使用" class="headerlink" title="登录状态维持(session的使用)"></a>登录状态维持(session的使用)</h3><ul>
+<li><p>下包：<code>npm i express-session</code></p>
+</li>
+<li><p>导包</p>
+</li>
+<li><p>用包</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> session = <span class="built_in">require</span>(<span class="string">'express-session'</span>)</span><br><span class="line">app.use(session(&#123;</span><br><span class="line">  secret: <span class="string">'keyboard cat'</span>,</span><br><span class="line">  resave: <span class="literal">false</span>,</span><br><span class="line">  saveUninitialized: <span class="literal">true</span>,</span><br><span class="line">  cookie: &#123; <span class="attr">secure</span>: <span class="literal">true</span> &#125;</span><br><span class="line">&#125;))</span><br><span class="line"><span class="comment">//保存信息</span></span><br><span class="line">req.session.userInfo=result[<span class="number">0</span>]</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="同步和异步"><a href="#同步和异步" class="headerlink" title="同步和异步"></a>同步和异步</h3><ul>
+<li>fs.readFile()异步</li>
+<li>hmModel.find(‘’,(err,result)=&gt;{})异步</li>
+</ul>
+<h3 id="echarts基本使用"><a href="#echarts基本使用" class="headerlink" title="-echarts基本使用"></a>-echarts基本使用</h3><ul>
+<li><p>数据可视化 数据编程图表</p>
+</li>
+<li><p>网址<code>https://www.echartsjs.com/zh/index.html</code></p>
+</li>
+</ul>
+<h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><blockquote>
+<p>1.home end 行头 行尾</p>
+<p>2.shift+home或end 选中一行</p>
+<p>3.ctrl+左右 识别词组跳跃</p>
+<p>4.vscode中快捷键</p>
+<p>​    ctrl+enter:光标换行，文字不换行</p>
+<p>​    ctrl+shift+enter 光标去上一行，文字不动</p>
+<p>5.vscode相关快捷键的使用:<code>http://go.microsoft.com/fwlink/?linkid=832145</code></p>
+</blockquote>
+<h3 id="补充typora主题"><a href="#补充typora主题" class="headerlink" title="补充typora主题"></a>补充typora主题</h3><p>vue主题：</p>
+<p>打开文件，选中偏好设置，点击获取主题进行下载，然后解压，把文件拷贝到打开主题文件夹中</p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 1143370870@qq.com </span>
+    </div>
+</article>
+
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>Node-JS</p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">10.9k</span></p>
+    <p><span class="copy-title">本文作者:</span><a  title="方世谦">方世谦</a></p>
+    <p><span class="copy-title">发布时间:</span>2019-12-04, 09:47:42</p>
+    <p><span class="copy-title">最后更新:</span>2019-12-07, 09:05:51</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/my-blog/2019/12/04/NodeJS/" title="Node-JS">http://yoursite.com/2019/12/04/NodeJS/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2016-2019 Yelog</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+</body>
+<script src="/my-blog/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="/my-blog/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': ['#工具','#React','#Vue','#Web入门','#git','#常用网址','#常见问题','#微信小程序','#谷歌插件','#Ajax','#JavaScript','#Webpack','#js高级','#动画、响应式、flex','#移动端项目','#WebAPI','#jQuery','#异步编程、Promise、Async函数','#css','#Node-JS',],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: ;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 602px;
+    }
+    .nav.fullscreen {
+        margin-left: -602px;
+    }
+    .nav-left {
+        width: 180px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 542px;
+        }
+        .nav.fullscreen {
+            margin-left: -542px;
+        }
+        .nav-left {
+            width: 150px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 542px;
+            margin-left: -542px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 542px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+    .post .pjax article .article-entry>ol, .post .pjax article .article-entry>ul, .post .pjax article>ol, .post .pjax article>ul{
+        border: #e2dede solid 1px;
+        border-radius: 10px;
+        padding: 10px 32px 10px 56px;
+    }
+    .post .pjax article .article-entry li>ol, .post .pjax article .article-entry li>ul,.post .pjax article li>ol, .post .pjax article li>ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .post .pjax article .article-entry>ol>li, .post .pjax article .article-entry>ul>li,.post .pjax article>ol>li, .post .pjax article>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .post .pjax article .article-entry li>ol>li, .post .pjax article .article-entry li>ul>li,.post .pjax article li>ol>li, .post .pjax article li>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("/my-bloghttps://i.loli.net/2019/07/22/5d3521411f3f169375.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+<div class="mobile-menus-out" >
+
+</div>
+<div class="mobile-menus">
+    
+    
+    
+    <a class="dynamic-menu " target="_blank"  href="https://fangshiqian.github.io/my-blog/">方世谦</a>
+    
+    
+    <a class="dynamic-menu " target="_blank"  href="https://github.com/fangshiqian">github</a>
+    
+</div>
+
+
+</html>

@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>WebAPI | 方世谦</title>
+  <meta name="keywords" content=" WebAPI ">
+  <meta name="description" content="WebAPI | 方世谦">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="keywords" content="微信小程序">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微信小程序">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;04&#x2F;%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F&#x2F;index.html">
+<meta property="og:site_name" content="方世谦">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-12-07T09:05:51.412Z">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/my-blog/img/favicon.ico">
+
+<link href="/my-blog/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/my-blog/css/hl_theme/github.css?v=1.0.1" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/my-blog/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/my-blog/js/iconfont.js?v=1.0.1" ></script>
+
+<link rel="alternate" href="/my-blog/atom.xml" title="方世谦" type="application/atom+xml">
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="/my-blog">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/my-blog/" class="avatar_target">
+    <img class="avatar" src="/my-blog/img/Fshiqian.jpg" />
+</a>
+<div class="author">
+    <span>方世谦</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="rss" href="/atom.xml" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-rss"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="github" href="https://github.com/fangshiqian" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+        
+        <a title="weibo" href="https://weibo.com/u/5358080550" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+        <a title="email" href="mailto:1143370870@qq.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=1143370870&site=qq&menu=yes" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="neteasemusic" href="https://music.163.com/playlist?id=3096702544&amp;userid=283641719" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-neteasemusic"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+<a class="more-menus">更多菜单</a>
+
+
+<ul>
+    <li><div class="all active">全部文章<small>(23)</small></div></li>
+    
+        
+            
+            <li><div data-rel="工具">工具<small>(3)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="学习"><i class="fold iconfont icon-right"></i>学习<small>(18)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="React">React<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="Vue">Vue<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="微信程序">微信程序<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="Web入门">Web入门<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="git">git<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="Ajax">Ajax<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="JavaScript">JavaScript<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="Webpack">Webpack<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="js高级">js高级<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="动画、响应式、flex">动画、响应式、flex<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="WebAPI">WebAPI<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="jQuery">jQuery<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="CSS">CSS<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="Node-JS">Node-JS<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="常用网址">常用网址<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    <a class="dynamic-menu " target="_blank"  href="https://fangshiqian.github.io/my-blog/">方世谦</a>
+    
+    
+    <a class="dynamic-menu " target="_blank"  href="https://github.com/fangshiqian">github</a>
+    
+    </div>
+    <div></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="23">
+<input type="hidden" id="yelog_site_word_count" value="63k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode==13){return false;}">
+        <input class="search" type="text" placeholder="以 in: 开头进行全文搜索" autocomplete="off"id="local-search-input" >
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <li class="article-tag-list-item">
+        <a class="color3">工具</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">React</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">Vue</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">Web入门</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">git</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">常用网址</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">常见问题</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">微信小程序</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">谷歌插件</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">Ajax</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">JavaScript</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Webpack</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">js高级</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">动画、响应式、flex</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">移动端项目</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">WebAPI</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color2">jQuery</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">异步编程、Promise、Async函数</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">css</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">Node-JS</a>
+    </li>
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        <a id="top" class=""
+           href="/my-blog/2019/11/27/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello Wor">Hello Wor</span>
+            <span class="post-date" title="2019-11-27 17:05:38">2019/11/27</span>
+        </a>
+        
+        <a  class="学习 微信程序 "
+           href="/my-blog/2019/12/04/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"
+           data-tag="微信小程序"
+           data-author="" >
+            <span class="post-title" title="微信小程序">微信小程序</span>
+            <span class="post-date" title="2019-12-04 19:58:58">2019/12/04</span>
+        </a>
+        
+        <a  class="学习 Vue "
+           href="/my-blog/2019/12/04/Vue/"
+           data-tag="Vue"
+           data-author="" >
+            <span class="post-title" title="Vue">Vue</span>
+            <span class="post-date" title="2019-12-04 13:47:57">2019/12/04</span>
+        </a>
+        
+        <a  class="学习 Vue "
+           href="/my-blog/2019/12/04/Vue%E5%AD%A6%E4%B9%A0/"
+           data-tag="Vue"
+           data-author="" >
+            <span class="post-title" title="1.Vue基础">1.Vue基础</span>
+            <span class="post-date" title="2019-12-04 13:47:57">2019/12/04</span>
+        </a>
+        
+        <a  class="学习 jQuery "
+           href="/my-blog/2019/12/04/jQuery/"
+           data-tag="jQuery"
+           data-author="" >
+            <span class="post-title" title="jQuery">jQuery</span>
+            <span class="post-date" title="2019-12-04 09:59:26">2019/12/04</span>
+        </a>
+        
+        <a  class="学习 React "
+           href="/my-blog/2019/12/04/React/"
+           data-tag="React"
+           data-author="" >
+            <span class="post-title" title="React">React</span>
+            <span class="post-date" title="2019-12-04 09:59:15">2019/12/04</span>
+        </a>
+        
+        <a  class="学习 Node-JS "
+           href="/my-blog/2019/12/04/NodeJS/"
+           data-tag="Node-JS"
+           data-author="" >
+            <span class="post-title" title="Node-JS">Node-JS</span>
+            <span class="post-date" title="2019-12-04 09:47:42">2019/12/04</span>
+        </a>
+        
+        <a  class="学习 Ajax "
+           href="/my-blog/2019/12/04/Ajax/"
+           data-tag="Ajax"
+           data-author="" >
+            <span class="post-title" title="Ajax">Ajax</span>
+            <span class="post-date" title="2019-12-04 09:47:05">2019/12/04</span>
+        </a>
+        
+        <a  class="学习 JavaScript "
+           href="/my-blog/2019/12/04/JavaScript/"
+           data-tag="JavaScript"
+           data-author="" >
+            <span class="post-title" title="JavaScript">JavaScript</span>
+            <span class="post-date" title="2019-12-04 09:46:51">2019/12/04</span>
+        </a>
+        
+        <a  class="学习 动画、响应式、flex "
+           href="/my-blog/2019/12/04/%E5%8A%A8%E7%94%BB%E3%80%81%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80%E4%B8%8Eflex%E5%B8%83%E5%B1%80/"
+           data-tag="动画、响应式、flex"
+           data-author="" >
+            <span class="post-title" title="动画、响应式、flex">动画、响应式、flex</span>
+            <span class="post-date" title="2019-12-04 09:46:34">2019/12/04</span>
+        </a>
+        
+        <a  class="学习 "
+           href="/my-blog/2019/11/30/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E9%A1%B9%E7%9B%AE/"
+           data-tag="移动端项目"
+           data-author="" >
+            <span class="post-title" title="移动端项目(类似今日头条)">移动端项目(类似今日头条)</span>
+            <span class="post-date" title="2019-11-30 20:33:18">2019/11/30</span>
+        </a>
+        
+        <a  class="学习 "
+           href="/my-blog/2019/11/30/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"
+           data-tag="常见问题"
+           data-author="" >
+            <span class="post-title" title="常见问题">常见问题</span>
+            <span class="post-date" title="2019-11-30 11:47:53">2019/11/30</span>
+        </a>
+        
+        <a  class="学习 "
+           href="/my-blog/2019/11/28/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B--Promise%E4%B8%8EAsync/"
+           data-tag="异步编程、Promise、Async函数"
+           data-author="" >
+            <span class="post-title" title="异步编程--Promise与Async">异步编程--Promise与Async</span>
+            <span class="post-date" title="2019-11-28 19:50:14">2019/11/28</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/my-blog/2019/11/27/PersonageHexo/"
+           data-tag="工具"
+           data-author="" >
+            <span class="post-title" title="搭建使用 Hexo 结合 GitHub Pages 搭建静态网 站">搭建使用 Hexo 结合 GitHub Pages 搭建静态网 站</span>
+            <span class="post-date" title="2019-11-27 20:42:57">2019/11/27</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/my-blog/2019/11/23/tool/"
+           data-tag="工具"
+           data-author="" >
+            <span class="post-title" title="工具">工具</span>
+            <span class="post-date" title="2019-11-23 15:13:47">2019/11/23</span>
+        </a>
+        
+        <a  class="常用网址 "
+           href="/my-blog/2019/10/27/%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80/"
+           data-tag="常用网址"
+           data-author="" >
+            <span class="post-title" title="常用网址">常用网址</span>
+            <span class="post-date" title="2019-10-27 17:05:38">2019/10/27</span>
+        </a>
+        
+        <a  class="学习 WebAPI "
+           href="/my-blog/2019/02/04/WebAPI/"
+           data-tag="WebAPI"
+           data-author="" >
+            <span class="post-title" title="WebAPI">WebAPI</span>
+            <span class="post-date" title="2019-02-04 13:34:50">2019/02/04</span>
+        </a>
+        
+        <a  class="学习 CSS "
+           href="/my-blog/2019/01/05/css/"
+           data-tag="css"
+           data-author="" >
+            <span class="post-title" title="css">css</span>
+            <span class="post-date" title="2019-01-05 09:33:44">2019/01/05</span>
+        </a>
+        
+        <a  class="学习 Webpack "
+           href="/my-blog/2018/12/03/Webpack/"
+           data-tag="Webpack"
+           data-author="" >
+            <span class="post-title" title="Webpack">Webpack</span>
+            <span class="post-date" title="2018-12-03 09:33:09">2018/12/03</span>
+        </a>
+        
+        <a  class="学习 git "
+           href="/my-blog/2018/12/03/git/"
+           data-tag="git"
+           data-author="" >
+            <span class="post-title" title="git">git</span>
+            <span class="post-date" title="2018-12-03 09:33:09">2018/12/03</span>
+        </a>
+        
+        <a  class="学习 js高级 "
+           href="/my-blog/2018/12/03/js%E9%AB%98%E7%BA%A7/"
+           data-tag="js高级"
+           data-author="" >
+            <span class="post-title" title="js高级">js高级</span>
+            <span class="post-date" title="2018-12-03 09:33:09">2018/12/03</span>
+        </a>
+        
+        <a  class="学习 Web入门 "
+           href="/my-blog/2018/12/03/Web%E5%85%A5%E9%97%A8/"
+           data-tag="Web入门"
+           data-author="" >
+            <span class="post-title" title="Web入门">Web入门</span>
+            <span class="post-date" title="2018-12-03 09:33:09">2018/12/03</span>
+        </a>
+        
+        <a  class="工具 "
+           href="/my-blog/2018/11/30/%E8%B0%B7%E6%AD%8C%E6%8F%92%E4%BB%B6/"
+           data-tag="谷歌插件"
+           data-author="" >
+            <span class="post-title" title="谷歌插件(可以访问谷歌商店)">谷歌插件(可以访问谷歌商店)</span>
+            <span class="post-date" title="2018-11-30 01:06:37">2018/11/30</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-WebAPI" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">WebAPI</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="学习">学习</a>/
+            
+                <a  data-rel="WebAPI">WebAPI</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color2">WebAPI</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2019-12-07 09:05:51'>2019-02-04 13:34</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:3.3k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#WebAPI"><span class="toc-text">WebAPI</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#获取节点DOM"><span class="toc-text">获取节点DOM</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注册事件on-事件类型"><span class="toc-text">注册事件on+事件类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对象的属性"><span class="toc-text">对象的属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设置和获取类名"><span class="toc-text">设置和获取类名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#classList"><span class="toc-text">classList</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义属性"><span class="toc-text">自定义属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#全选与反选案例"><span class="toc-text">全选与反选案例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注册事件addEventListener"><span class="toc-text">注册事件addEventListener</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#事件三个阶段"><span class="toc-text">事件三个阶段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#事件对象"><span class="toc-text">事件对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#获取元素位置"><span class="toc-text">获取元素位置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#跟着鼠标飞"><span class="toc-text">跟着鼠标飞</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#事件解绑"><span class="toc-text">事件解绑</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#事件委托"><span class="toc-text">事件委托</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修改、创建、添加节点"><span class="toc-text">修改、创建、添加节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#发布微博"><span class="toc-text">发布微博</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#通过节点获取节点"><span class="toc-text">通过节点获取节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#删除节点"><span class="toc-text">删除节点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#BOM"><span class="toc-text">BOM</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#window及onload"><span class="toc-text">window及onload</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#定时器"><span class="toc-text">定时器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BOM的location"><span class="toc-text">BOM的location</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BOM的localStorage"><span class="toc-text">BOM的localStorage</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JSON"><span class="toc-text">JSON</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#获取DOM节点的样式"><span class="toc-text">获取DOM节点的样式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tab栏"><span class="toc-text">tab栏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#手风琴"><span class="toc-text">手风琴</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#旋转木马"><span class="toc-text">旋转木马</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#360开机动画"><span class="toc-text">360开机动画</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#放大镜"><span class="toc-text">放大镜</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#事件对象-触摸事件"><span class="toc-text">事件对象-触摸事件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#封装tap手势"><span class="toc-text">封装tap手势</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#zepto类库引入"><span class="toc-text">zepto类库引入</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#touch-js的引入"><span class="toc-text">touch.js的引入</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#轮播图"><span class="toc-text">轮播图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#轮播图-无缝滚动"><span class="toc-text">轮播图-无缝滚动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#swiper插件"><span class="toc-text">swiper插件</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="WebAPI"><a href="#WebAPI" class="headerlink" title="WebAPI"></a>WebAPI</h2><ul>
+<li>节点：标签、文本、属性</li>
+</ul>
+<h3 id="获取节点DOM"><a href="#获取节点DOM" class="headerlink" title="获取节点DOM"></a>获取节点DOM</h3><ul>
+<li><p>ById</p>
+<ul>
+<li><p>参数：id的字符串</p>
+</li>
+<li><p>返回值：DOM节点 也是对象</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">'id字符串'</span>);</span><br><span class="line"><span class="comment">//获取body</span></span><br><span class="line"><span class="built_in">document</span>.body</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>ByTagName </p>
+<ul>
+<li><p>参数：标签名的1字符串</p>
+</li>
+<li><p>返回值：伪数组 没有forEach方法 可以遍历 可以使用for循环</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementsByTagName(<span class="string">'li'</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>ByClassName </p>
+<ul>
+<li><p>参数：类名的字符串</p>
+</li>
+<li><p>返回值 伪数组 没有forEach方法 可以遍历 可以使用for循环</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementsByClassName(<span class="string">'.box'</span>);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>querySelector</p>
+<ul>
+<li><p>参数：css选择器</p>
+</li>
+<li><p>返回值：返回节点对象 （第一个被选中）</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> box=<span class="built_in">document</span>.querySelector(<span class="string">'.box'</span>);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>querySelectorAll</p>
+<ul>
+<li><p>参数：css选择器</p>
+</li>
+<li><p>返回值 伪数组 可以使用forEach循环 遍历 for循环</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> lis=<span class="built_in">document</span>.querySelectorAll(<span class="string">'li'</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="注册事件on-事件类型"><a href="#注册事件on-事件类型" class="headerlink" title="注册事件on+事件类型"></a>注册事件on+事件类型</h3><ul>
+<li><p>注册点击click事件</p>
+<ul>
+<li>事件源</li>
+<li>点击行为</li>
+<li>响应</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">btn.onclick=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    alert(<span class="string">'1'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>注册focus和blur事件</p>
+<ul>
+<li><p>focus 获取焦点</p>
+</li>
+<li><p>blur 失去焦点</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">txt.onfocus=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">txt.onblur=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>鼠标按下mousedown</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">box.onmousedown=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><p>鼠标移动mousemove</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">box.onmousemove=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>鼠标弹起mouseup</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">box.onmouseup=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>键盘按下keydown</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.onkeydown=<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(e.keyCode);<span class="comment">//返回不同的键的码数</span></span><br><span class="line">    <span class="built_in">console</span>.log(e.ctrlKey);<span class="comment">//判断按下的键是否为ctrl键</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>键盘弹起keyup</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.onkeyup=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>鼠标进入</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">box.onmouseover=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>鼠标移出</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">box.onmouseout=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>滚动事件</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p.onscroll=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="comment">//卷入的高度</span></span><br><span class="line">    <span class="built_in">console</span>.log(p.scrollTop);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+</li>
+</ul>
+<h3 id="对象的属性"><a href="#对象的属性" class="headerlink" title="对象的属性"></a>对象的属性</h3><ul>
+<li><p>属性：</p>
+<ul>
+<li>标准属性：<ul>
+<li>style</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(btn.style);<span class="comment">//返回是style对象</span></span><br><span class="line">  </span><br><span class="line"><span class="comment">//获取</span></span><br><span class="line"><span class="built_in">console</span>.log(btn.style.width);</span><br><span class="line">  </span><br><span class="line"><span class="comment">//设置</span></span><br><span class="line">btn.style.backgroundColor=<span class="string">'red'</span>;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>开关属性<ul>
+<li>值的状态只有两个 true false</li>
+<li>disabled 设置是否禁用</li>
+<li>checked 设置是否选择</li>
+<li>selected 设置下拉框是否选择</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>btn.value 是专门针对表单元素的标签 textarea 也尽量用value值进行获取</p>
+</li>
+<li><p>innerHTML</p>
+<ul>
+<li><p>返回值为string类型</p>
+</li>
+<li><p>可以识别html结构</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">btn.innerHTML=<span class="string">'&lt;li&gt;新的元素&lt;/li&gt;'</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>操作属性的方法：</p>
+<ul>
+<li><p>对属性进行增删改查</p>
+<ul>
+<li><p>获取属性getAttribute(‘属性名’)</p>
+<ul>
+<li>参数：属性名</li>
+<li>返回值：属性值</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">box.getAttribute(<span class="string">'abc'</span>);<span class="comment">//可以获取标准属性和自定义属性，还可以获取自己定义的属性名</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置属性setAttribute(‘属性名’,’属性值’)</p>
+<ul>
+<li><p>参数：属性名和属性值</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">box.setAttribute(<span class="string">'abc'</span>,<span class="string">'234'</span>);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>删除属性removeAttribute(‘属性名’)</p>
+<ul>
+<li><p>参数：删除的属性名</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">box.removeAttribute(<span class="string">'属性名'</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="设置和获取类名"><a href="#设置和获取类名" class="headerlink" title="设置和获取类名"></a>设置和获取类名</h3><ul>
+<li><p>语法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获取</span></span><br><span class="line"><span class="built_in">console</span>.log(box.className);</span><br><span class="line"><span class="comment">//设置   原来的类名完全被覆盖</span></span><br><span class="line">box.className=<span class="string">'e'</span>；</span><br><span class="line">box.className+=<span class="string">'bg_red'</span>;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="classList"><a href="#classList" class="headerlink" title="classList"></a>classList</h3><ul>
+<li><p>对类名进行增删改</p>
+<ul>
+<li>返回值：返回一个对象</li>
+</ul>
+</li>
+<li><p>添加类名：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">btn.onclick=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    div.classList.add(<span class="string">'bg_red'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除类名</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">btn.onclick=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    div.classList.remove(<span class="string">'bg_red'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>切换类名</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">btn.onclick=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    div.classList.toggle(<span class="string">'bg_red'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h3 id="自定义属性"><a href="#自定义属性" class="headerlink" title="自定义属性"></a>自定义属性</h3><ul>
+<li><p>自定义属性命名：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//以data-开头进行命名</span></span><br><span class="line">&lt;input type=<span class="string">"button"</span> data-src=<span class="string">'./images/01.jpg'</span>&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>自定义属性获取</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(input.dataset);</span><br><span class="line"><span class="comment">//返回一个对象</span></span><br><span class="line"><span class="built_in">console</span>.log(input.dataset[<span class="string">'src'</span>]);<span class="comment">//input.dataset.src</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>函数内部有一个关键字 <strong>this</strong> 获取当前对象</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> div=<span class="built_in">document</span>.getElementById(<span class="string">'box'</span>);</span><br><span class="line">div.onclick=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>);<span class="comment">//div</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="全选与反选案例"><a href="#全选与反选案例" class="headerlink" title="全选与反选案例"></a>全选与反选案例</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> allCk=<span class="built_in">document</span>.getElementById(‘all)；</span><br><span class="line"><span class="keyword">var</span> cks=<span class="built_in">document</span>.getElementsByClassName(<span class="string">'ck'</span>);</span><br><span class="line">allCk.onclick=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;cks.length;i++)&#123;</span><br><span class="line">        cks[i].checked=allCk.checked;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> is_checked;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> j=<span class="number">0</span>;j&lt;cks.length;j++)&#123;</span><br><span class="line">    cks[i].onclick=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        is_checked=<span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;cks.length;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(cks[i].checked==<span class="literal">false</span>)&#123;</span><br><span class="line">                is_checked=<span class="literal">false</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">               &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(is_checked)&#123;</span><br><span class="line">            allCk.checked=<span class="literal">true</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            allCk.checked=<span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="注册事件addEventListener"><a href="#注册事件addEventListener" class="headerlink" title="注册事件addEventListener"></a>注册事件addEventListener</h3><ul>
+<li><p>多次注册事件 不被覆盖</p>
+</li>
+<li><p>语法</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">btn.addEventListener(<span class="string">'click'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;)</span><br><span class="line">btn.addEventListener(<span class="string">'click mouseenter'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>小知识：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">btn.click();</span><br><span class="line"><span class="comment">//调用点击事件 不论按钮是以on+事件类型方式还是addEventListener注册的点击事件均可以使用此方式进行调用注册的点击事件</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h3 id="事件三个阶段"><a href="#事件三个阶段" class="headerlink" title="事件三个阶段"></a>事件三个阶段</h3><ul>
+<li><p>捕获：从外向里</p>
+</li>
+<li><p>到达目标</p>
+</li>
+<li><p>冒泡：从内向外 默认事件是在冒泡阶段执行的</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">box.addEventListener(<span class="string">'click'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;,<span class="literal">false</span>);<span class="comment">//默认是false 表示冒泡阶段执行事件</span></span><br><span class="line"></span><br><span class="line">box.addEventListener(<span class="string">'click'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;,<span class="literal">true</span>);<span class="comment">//true 表示捕获阶段执行事件</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>阻止冒泡</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">box.addEventListener(<span class="string">'click'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    e.stopPropagation();</span><br><span class="line">&#125;,<span class="literal">false</span>)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="事件对象"><a href="#事件对象" class="headerlink" title="事件对象"></a>事件对象</h3><ul>
+<li><p>描述一次点击行为，看成是一个对象</p>
+</li>
+<li><p>属性和方法</p>
+<ul>
+<li>获取位置<ul>
+<li>可视区域<ul>
+<li>e.clientX()；</li>
+<li>e.clientY();</li>
+</ul>
+</li>
+<li>页面左上角<ul>
+<li>e.pageX()</li>
+<li>e.pageY()</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>  <img src="C:%5CUsers%5C%E5%88%98%E6%99%93%E6%85%A7%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1568878061632.png" alt="1568878061632"></p>
+<ul>
+<li><p>获取目标对象</p>
+<ul>
+<li>e.target</li>
+</ul>
+</li>
+<li><p>获取绑定事件对象</p>
+<ul>
+<li>e.currentTarget==this</li>
+</ul>
+</li>
+<li><p>阻止浏览器默认行为</p>
+<ul>
+<li><p>e.preventDefault()</p>
+</li>
+<li><p>return false;</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.oncontextmenu=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="获取元素位置"><a href="#获取元素位置" class="headerlink" title="获取元素位置"></a>获取元素位置</h3><ul>
+<li><p>当子元素没有设置定位时</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">box.offsetLeft=父元素的边框+父元素的marginLeft+父元素的paddingLeft+子元素的marginLeft</span><br><span class="line">box.offsetTop=父元素的边框+父元素的marginTop+父元素的paddingTop+子元素的marginTop</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><p>当子元素设置定位</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">box.offsetLeft=left+marginLeft<span class="comment">//无论是以谁定位</span></span><br><span class="line">box.offsetTop=top+marginTop<span class="comment">//无论是以谁定位</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>获取元素位置的相对于哪个父亲</p>
+<p>box.offsetParent</p>
+</li>
+</ul>
+<h3 id="跟着鼠标飞"><a href="#跟着鼠标飞" class="headerlink" title="跟着鼠标飞"></a>跟着鼠标飞</h3><ul>
+<li>想要东西飞起来就要设置脱标<ul>
+<li>position:absolute 绝对定位 相对于浏览器 也就是页面左上角 会随着滚动条的滚动而滚动</li>
+<li>position:fixed  固定定位 相对于可视窗口区域 不会随着滚动条滚动而滚动</li>
+<li>所以：<ul>
+<li>绝对定位和pageX、pageY搭配</li>
+<li>固定定位和clientX和clientY搭配，当然也可以和pageX和pageY搭配</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="事件解绑"><a href="#事件解绑" class="headerlink" title="事件解绑"></a>事件解绑</h3><ul>
+<li><p>当用on+事件类型进行解绑方式</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">btn.onclick=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    btn.onclick=<span class="literal">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>当用addEventListener事件进行解绑方式</p>
+<p>btn.addEventListener(‘click’,function fn(){</p>
+<p>​    btn.removeEventListener(‘click’,fn);</p>
+<p>})</p>
+</li>
+</ul>
+<h3 id="事件委托"><a href="#事件委托" class="headerlink" title="事件委托"></a>事件委托</h3><ul>
+<li><p>当一些本身存在的子元素设置某些事件，但一旦父元素想办法进行添加一些新的子元素的时候，之前设置的子元素的某些事件就会失效，所以引入事件委托</p>
+</li>
+<li><p>为了让新增的子元素也有此事件的行为</p>
+</li>
+<li><p>给子元素的父元素注册事件 利用冒泡原理 实现父元素所有子元素注册事件</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//e.target.nodeType:</span></span><br><span class="line"><span class="comment">//节点标签：1</span></span><br><span class="line"><span class="comment">//属性：2</span></span><br><span class="line"><span class="comment">//文本：3</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//e.target.nodeValue</span></span><br><span class="line"><span class="comment">//节点标签：null</span></span><br><span class="line"><span class="comment">//属性:属性值</span></span><br><span class="line"><span class="comment">//文本：文本内容</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//e.target.nodeName</span></span><br><span class="line"><span class="comment">//节点标签：eg:LI</span></span><br><span class="line"><span class="comment">//属性：小写属性名</span></span><br><span class="line"><span class="comment">//文本：#text</span></span><br><span class="line"></span><br><span class="line">ul.addEventListener(<span class="string">'click'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(e.target.nodeName==<span class="string">'LI'</span>)&#123;</span><br><span class="line">        alert(<span class="string">'1'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="修改、创建、添加节点"><a href="#修改、创建、添加节点" class="headerlink" title="修改、创建、添加节点"></a>修改、创建、添加节点</h3><ul>
+<li><p>修改</p>
+<ul>
+<li>设置DOM节点内部html结构 识别HTML结构</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">box.innerHTML=<span class="string">'&lt;a href="#"&gt;百度&lt;/a&gt;'</span>;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>设置DOM节点内部的文本内容</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">box.innerText=<span class="string">'我是你爸爸'</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建节点</p>
+<ul>
+<li><p>只是在js中创建，在页面中不显示</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> li=<span class="built_in">document</span>.createElement(<span class="string">'li'</span>);</span><br><span class="line"><span class="built_in">document</span>.write();<span class="comment">//识别html结构</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>添加节点</p>
+<ul>
+<li><p>在父元素的最后一个子元素后面添加</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ul.appendChild(li);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在指定位置添加子元素</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ul.insertBefore(li,first);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="发布微博"><a href="#发布微博" class="headerlink" title="发布微博"></a>发布微博</h3><ul>
+<li>增删改 本地存储</li>
+</ul>
+<h3 id="通过节点获取节点"><a href="#通过节点获取节点" class="headerlink" title="通过节点获取节点"></a>通过节点获取节点</h3><ul>
+<li><p>以下均为属性</p>
+<ul>
+<li>获取所有的子元素</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ul.children;<span class="comment">//返回所有亲生子元素 伪数组</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>获取亲生父元素</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">li3.parentNode;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>获取兄弟元素</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">li3.nextElementSibling;</span><br><span class="line">li3.previousElementSibling;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+</li>
+</ul>
+<h3 id="删除节点"><a href="#删除节点" class="headerlink" title="删除节点"></a>删除节点</h3><ul>
+<li><p>方法</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ul.removeChild(first);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="BOM"><a href="#BOM" class="headerlink" title="BOM"></a>BOM</h2><h3 id="window及onload"><a href="#window及onload" class="headerlink" title="window及onload"></a>window及onload</h3><ul>
+<li><p>window是顶级对象</p>
+</li>
+<li><p>window上大部分的属性和方法都是window调用的</p>
+<ul>
+<li><p>所有全局变量和函数都是window顶级对象上的属性和方法</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.a;</span><br><span class="line"><span class="keyword">var</span> a;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>)</span>&#123;&#125;</span><br><span class="line"><span class="built_in">window</span>.fn();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>隐式全局变量，不推荐使用</p>
+</li>
+<li><p>onload 等静态文件全部加在完成，其内部代码才进行执行</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="定时器"><a href="#定时器" class="headerlink" title="定时器"></a>定时器</h3><ul>
+<li><p>一次性定时器</p>
+<ul>
+<li>第一个参数：<strong>等待</strong>一定时间后执行的函数</li>
+<li>第二个参数：设置等待多久 毫秒</li>
+<li>返回值：清除定时器</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> timer=setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;,<span class="number">1000</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">//清除定时器</span></span><br><span class="line">clearTimeout(timer);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>永久定时器</p>
+<ul>
+<li><p>第一个参数：<strong>等待</strong>一定时间后执行的函数</p>
+</li>
+<li><p>第二个参数：设置等待多久 毫秒</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> timer=setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;,<span class="number">1000</span>)</span><br><span class="line"><span class="comment">//清除定时器</span></span><br><span class="line">clearInterval(timer);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="BOM的location"><a href="#BOM的location" class="headerlink" title="BOM的location"></a>BOM的location</h3><ul>
+<li><p>BOM上的一个属性 重新指定浏览器的地址栏上的地址 页面就会进行跳转</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">location.href=<span class="string">'http://www.baidu.com'</span>;</span><br><span class="line"><span class="comment">//必须加协议http://</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="BOM的localStorage"><a href="#BOM的localStorage" class="headerlink" title="BOM的localStorage"></a>BOM的localStorage</h3><ul>
+<li><p>用于将一些数据进行本地存储</p>
+</li>
+<li><p>返回对象</p>
+<ul>
+<li><p>setItem设置本地数据</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">locaStorage.setItem(<span class="string">'a'</span>,a);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>getItem获取本地数据</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">localStorage.getItem(<span class="string">'a'</span>);</span><br><span class="line"><span class="comment">//获取不存在的数据 返回null</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>removeItem删除本地数据</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">localStorage.removeItem(<span class="string">'a'</span>);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>全部清空</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">localStorage.clear();</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h3><ul>
+<li><p>因为本地数据存储为字符串格式，当遇到一些对象时，需要转换为字符串，因此BOM提供其JSON格式的字符串的转换</p>
+</li>
+<li><p>一般格式(字符串 数字)</p>
+</li>
+<li><p>所有的键和使用双引号包起来</p>
+</li>
+<li><p>字符串也用双引号包起来</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr=[</span><br><span class="line">    &#123;</span><br><span class="line">        info:<span class="string">""</span>,</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>把对象转换为JSON格式的字符串</p>
+<ul>
+<li><p>参数：对象</p>
+</li>
+<li><p>返回值：JSON格式的字符串</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str=<span class="built_in">JSON</span>.stringify(arr);</span><br><span class="line"><span class="comment">//存入本地时候，对于复杂类型的数据进行转换字符串</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>把JSON格式的字符串转换为对象</p>
+<ul>
+<li><p>参数：JSON格式的字符串</p>
+</li>
+<li><p>返回值：对象</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr=<span class="built_in">JSON</span>.parse(str);</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="获取DOM节点的样式"><a href="#获取DOM节点的样式" class="headerlink" title="获取DOM节点的样式"></a>获取DOM节点的样式</h3><ul>
+<li><p>只能获取行内样式</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">div.style.left;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>BOM中的getComputedStyle</p>
+<ul>
+<li><p>参数是DOM节点</p>
+</li>
+<li><p>返回值：返回DOM节点的样式对象</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.getComputedStyle(box).width;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>返回盒子的实际宽度和高度</p>
+<ul>
+<li><p>width=content+padding+border</p>
+</li>
+<li><p>height=content+padding+border</p>
+</li>
+<li><p>返回值：数字类型</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">box.offsetWidth;</span><br><span class="line">box.offsetHeight;</span><br><span class="line"><span class="built_in">console</span>.log(box.style.width);<span class="comment">//返回字符串 eg:120px; 只能获取行内元素 可以进行获取和设置</span></span><br><span class="line"><span class="built_in">console</span>.log(box.offsetWidth);<span class="comment">//返回数字 eg:120;只能进行获取不能设置 获取行内和css内部的样式 获取盒子真实宽度</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.getComputedStyle(box).width);<span class="comment">//返回字符串 eg:120px 返回的就是盒子的内容区域 只能进行获取 可以获取行内和css样式里的样式</span></span><br><span class="line"><span class="built_in">console</span>.log(box.clientWidth);<span class="comment">//返回数字，eg:100 返回的是盒子的可视区域的宽度，即width+padding 可以获取行内和css内部的样式</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="tab栏"><a href="#tab栏" class="headerlink" title="tab栏"></a>tab栏</h2><ul>
+<li>排他功能</li>
+<li>自定义属性的使用</li>
+</ul>
+<h2 id="手风琴"><a href="#手风琴" class="headerlink" title="手风琴"></a>手风琴</h2><ul>
+<li>排他功能</li>
+</ul>
+<h2 id="旋转木马"><a href="#旋转木马" class="headerlink" title="旋转木马"></a>旋转木马</h2><ul>
+<li>利用数组存储类名，在每次点击按钮时候，进行转换数组的顺序，使图片的类名重新进行赋值</li>
+<li>点击右键 数组的操作是，删除第一个，进行添加数组的后面</li>
+<li>点击左键 数组的操作时 删除最后一个 进行添加数组的前面</li>
+</ul>
+<h2 id="360开机动画"><a href="#360开机动画" class="headerlink" title="360开机动画"></a>360开机动画</h2><ul>
+<li><p>只能使用addEventListener注册事件</p>
+</li>
+<li><p>动画设置无限播放，下面的事件不会生效</p>
+</li>
+<li><p>animationend</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ul.addEventListener(<span class="string">'animationend'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'动画已经执行完'</span>);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li>transitionend</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ul.addEventListener(<span class="string">'transition'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'过渡已经执行完'</span>);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="放大镜"><a href="#放大镜" class="headerlink" title="放大镜"></a>放大镜</h2><ul>
+<li>比例计算</li>
+</ul>
+<p><img src="C:%5CUsers%5C%E5%88%98%E6%99%93%E6%85%A7%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1569330592598.png" alt="1569330592598"></p>
+<h2 id="事件对象-触摸事件"><a href="#事件对象-触摸事件" class="headerlink" title="事件对象-触摸事件"></a>事件对象-触摸事件</h2><ul>
+<li><p>移动端</p>
+</li>
+<li><p>推荐使用addEventListener注册事件</p>
+</li>
+<li><ul>
+<li><p>触摸开始</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">box.addEventListener(<span class="string">'touchstart'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(e.touches);<span class="comment">//获取屏幕上所有的触摸点</span></span><br><span class="line">    <span class="built_in">console</span>.log(e.targetTouches);<span class="comment">//获取元素上的触摸点</span></span><br><span class="line">    <span class="built_in">console</span>.log(e.changedTouches);<span class="comment">//变化后的触摸点，获取离开屏幕上时的最后的点</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>触摸移动</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">box.addEVentlistener(<span class="string">'touchmove'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">     <span class="built_in">console</span>.log(e.touches);<span class="comment">//获取屏幕上所有的触摸点</span></span><br><span class="line">    <span class="built_in">console</span>.log(e.targetTouches);<span class="comment">//获取元素上的触摸点</span></span><br><span class="line">    <span class="built_in">console</span>.log(e.changedTouches);<span class="comment">//变化后的触摸点，获取离开屏幕上时的最后的点</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>触摸结束</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">box.addEventListener(<span class="string">'touchend'</span>,<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">     <span class="built_in">console</span>.log(e.touches);<span class="comment">//获取屏幕上所有的触摸点</span></span><br><span class="line">    <span class="built_in">console</span>.log(e.targetTouches);<span class="comment">//获取元素上的触摸点</span></span><br><span class="line">    <span class="built_in">console</span>.log(e.changedTouches);<span class="comment">//变化后的触摸点，获取离开屏幕上时的最后的点</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="封装tap手势"><a href="#封装tap手势" class="headerlink" title="封装tap手势"></a>封装tap手势</h2><ul>
+<li>思路：<ul>
+<li>获取开始触摸时的位置及时间，判断屏幕上所有的触摸点为1</li>
+<li>获取离开屏幕时的位置及时间，判断离开时候变化的触摸点数为1</li>
+<li>进行计算时间差和位置差，然后设置的标准进行比较，如果符合进行执行回调函数</li>
+</ul>
+</li>
+</ul>
+<h2 id="zepto类库引入"><a href="#zepto类库引入" class="headerlink" title="zepto类库引入"></a>zepto类库引入</h2><ul>
+<li><p>语法类似于jQuery</p>
+<ul>
+<li><p>获取节点对象</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> div=$(<span class="string">'div'</span>);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置样式</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">box.css(&#123;</span><br><span class="line">    width:<span class="string">'500px'</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>绑定事件</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">box.on(<span class="string">'click'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;)</span><br><span class="line">box.click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>添加子元素</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">box.append(<span class="string">'&lt;a href="#"&gt;百度&lt;/a&gt;'</span>);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>显示或者隐藏</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">box.show();<span class="comment">//显示</span></span><br><span class="line">box.hide();<span class="comment">//隐藏</span></span><br><span class="line"><span class="comment">//对于设置毫秒值的参数的时候，对于jQuery比较适用</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>手势一些模块分开进行引入</p>
+</li>
+</ul>
+<h3 id="touch-js的引入"><a href="#touch-js的引入" class="headerlink" title="touch.js的引入"></a>touch.js的引入</h3><ul>
+<li><p>点击事件</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">box.on(<span class="string">'tap'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>左滑</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">box.on(<span class="string">'swipeLeft'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>右滑</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">box.on(<span class="string">'swipeRight'</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="轮播图"><a href="#轮播图" class="headerlink" title="轮播图"></a>轮播图</h2><h2 id="轮播图-无缝滚动"><a href="#轮播图-无缝滚动" class="headerlink" title="轮播图-无缝滚动"></a>轮播图-无缝滚动</h2><ul>
+<li>利用过渡执行结束事件以及定时器的控制是否有过渡，实现无缝滚动的效果</li>
+</ul>
+<h2 id="swiper插件"><a href="#swiper插件" class="headerlink" title="swiper插件"></a>swiper插件</h2><ul>
+<li><p>语法：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--引入css和js文件--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'swiper-container'</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'swiper-wrapper'</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'swiper-slide'</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">'#'</span>&gt;</span></span><br><span class="line">            	<span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">''</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--如果需要分页器--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'swiper-pagination'</span>&gt;</span></span><br><span class="line">        </span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--需要导航按钮--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'swiper-button-prev'</span>&gt;</span></span><br><span class="line">        </span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'swiper-button-next'</span>&gt;</span></span><br><span class="line">        </span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--需要进度条--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">'swiper-scrollbar'</span>&gt;</span></span><br><span class="line">        </span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mySwiper=<span class="keyword">new</span> Swiper(<span class="string">'.swiper-container'</span>&#123;</span><br><span class="line">           <span class="comment">//过渡执行时间</span></span><br><span class="line">             speed:<span class="number">200</span>,</span><br><span class="line">           <span class="comment">//形成闭环</span></span><br><span class="line">              loop:<span class="literal">true</span>,</span><br><span class="line">           <span class="comment">//自动播放</span></span><br><span class="line">               autoplay:<span class="literal">true</span>,</span><br><span class="line">               navigation:&#123;</span><br><span class="line">                    nextEl:<span class="string">'.swiper-button-next'</span>,</span><br><span class="line">                    prevEl:<span class="string">'.swiper-button-prev'</span></span><br><span class="line"></span><br><span class="line">              &#125;,</span><br><span class="line">                pagination:&#123;</span><br><span class="line">                    el:<span class="string">'.swiper-pagination'</span></span><br><span class="line">                &#125;,</span><br><span class="line">                scrollbar:&#123;</span><br><span class="line">                       el:<span class="string">'.swiper-scrollbar'</span>,</span><br><span class="line">                 &#125;</span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 1143370870@qq.com </span>
+    </div>
+</article>
+
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>WebAPI</p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">3.3k</span></p>
+    <p><span class="copy-title">本文作者:</span><a  title="方世谦">方世谦</a></p>
+    <p><span class="copy-title">发布时间:</span>2019-02-04, 13:34:50</p>
+    <p><span class="copy-title">最后更新:</span>2019-12-07, 09:05:51</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/my-blog/2019/02/04/WebAPI/" title="WebAPI">http://yoursite.com/2019/02/04/WebAPI/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2016-2019 Yelog</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+</body>
+<script src="/my-blog/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="/my-blog/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': ['#工具','#React','#Vue','#Web入门','#git','#常用网址','#常见问题','#微信小程序','#谷歌插件','#Ajax','#JavaScript','#Webpack','#js高级','#动画、响应式、flex','#移动端项目','#WebAPI','#jQuery','#异步编程、Promise、Async函数','#css','#Node-JS',],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: ;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 602px;
+    }
+    .nav.fullscreen {
+        margin-left: -602px;
+    }
+    .nav-left {
+        width: 180px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 542px;
+        }
+        .nav.fullscreen {
+            margin-left: -542px;
+        }
+        .nav-left {
+            width: 150px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 542px;
+            margin-left: -542px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 542px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+    .post .pjax article .article-entry>ol, .post .pjax article .article-entry>ul, .post .pjax article>ol, .post .pjax article>ul{
+        border: #e2dede solid 1px;
+        border-radius: 10px;
+        padding: 10px 32px 10px 56px;
+    }
+    .post .pjax article .article-entry li>ol, .post .pjax article .article-entry li>ul,.post .pjax article li>ol, .post .pjax article li>ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .post .pjax article .article-entry>ol>li, .post .pjax article .article-entry>ul>li,.post .pjax article>ol>li, .post .pjax article>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .post .pjax article .article-entry li>ol>li, .post .pjax article .article-entry li>ul>li,.post .pjax article li>ol>li, .post .pjax article li>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("/my-bloghttps://i.loli.net/2019/07/22/5d3521411f3f169375.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+<div class="mobile-menus-out" >
+
+</div>
+<div class="mobile-menus">
+    
+    
+    
+    <a class="dynamic-menu " target="_blank"  href="https://fangshiqian.github.io/my-blog/">方世谦</a>
+    
+    
+    <a class="dynamic-menu " target="_blank"  href="https://github.com/fangshiqian">github</a>
+    
+</div>
+
+
+</html>
